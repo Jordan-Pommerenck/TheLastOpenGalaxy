@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+*.uasset linguist-detectable=true
+
+# Example of a `.gitattributes` file which reclassifies `.cs` files as C++:
+Source/* linguist-language=C++
+Config/* linguist-language=C++
+*.uasset linguist-language=C++
+
+# Example of not checking code for linguist from certain folders
+Content/Materials/* linguist-detectable=false
