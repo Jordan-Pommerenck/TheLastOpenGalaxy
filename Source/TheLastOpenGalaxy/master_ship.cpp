@@ -23,11 +23,13 @@ void Amaster_ship::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FVector new_location = GetActorLocation() + (current_speed * DeltaTime) * GetActorForwardVector();
+	FVector new_location = (current_speed * DeltaTime) * GetActorForwardVector(); //+ GetActorLocation();
 
-	FRotator new_rotation = FRotator(FQuat(FRotator(current_pitch * DeltaTime, current_yaw * DeltaTime, current_roll * DeltaTime)) * FQuat(GetActorRotation()));
-
-	SetActorLocationAndRotation(new_location, new_rotation, false, 0, ETeleportType::None);
+	FRotator new_rotation = FRotator(current_pitch * DeltaTime, current_yaw * DeltaTime, current_roll * DeltaTime); // +(GetActorRotation());
+	
+	AddActorLocalOffset(new_location, false, 0, ETeleportType::None);
+	AddActorLocalRotation(new_rotation, false, 0, ETeleportType::None);
+	SetActorLocationAndRotation(GetActorLocation(), GetActorRotation(), false, 0, ETeleportType::None);
 
 }
 
