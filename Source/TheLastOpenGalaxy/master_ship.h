@@ -19,6 +19,9 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Movement")
+		float min_speed = 0.001;
+
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 		float base_speed;
 
@@ -48,6 +51,15 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 		float current_roll;
+
+	UFUNCTION(BlueprintCallable, Category = "Transform")
+		void update_pitch(float axis_value);
+
+	UFUNCTION(BlueprintCallable, Category = "Transform")
+		void update_yaw(float axis_value);
+
+	UFUNCTION(BlueprintCallable, Category = "Transform")
+		void update_roll(float axis_value);
 
 public:	
 	// Called every frame
