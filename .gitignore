@@ -13,7 +13,8 @@ Saved
 *.xcodeproj
 *.xcworkspace
 
-# Ignore the Level data
-*Levels/
-*StarSphere/
-*Blender/
+# Ignore the sub folders
+Levels/
+StarSphere/
+Blender/
+heavy_fighter/
