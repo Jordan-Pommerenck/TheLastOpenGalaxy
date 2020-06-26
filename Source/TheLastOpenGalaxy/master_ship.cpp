@@ -41,7 +41,7 @@ void Amaster_ship::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 }
 
 void Amaster_ship::update_pitch(float axis_value) {
-	current_pitch = base_pitch * axis_value;
+	current_pitch = - base_pitch * axis_value;
 }
 
 void Amaster_ship::update_yaw(float axis_value) {
@@ -50,4 +50,20 @@ void Amaster_ship::update_yaw(float axis_value) {
 
 void Amaster_ship::update_roll(float axis_value) {
 	current_roll = base_roll * axis_value;
+}
+
+void Amaster_ship::update_speed(float axis_value, float world_delta_seconds, bool rht_trggr) {
+	int the_trggr = -1;
+	if (axis_value > 0) {
+		if (rht_trggr) {
+			the_trggr = 1;
+		}
+		current_acceleration = axis_value * base_acceleration * the_trggr;
+		float target_speed = current_speed + (current_acceleration * world_delta_seconds);
+
+		current_speed = FMath::Clamp(FMath::FInterpTo(current_speed, target_speed, world_delta_seconds, 4.0f), min_speed, base_speed);
+	}
+	else {
+		current_acceleration = 0;
+	}
 }

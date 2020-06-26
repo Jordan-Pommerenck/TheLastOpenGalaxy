@@ -61,6 +61,9 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Transform")
 		void update_roll(float axis_value);
 
+	UFUNCTION(BlueprintCallable, Category = "Transform")
+		void update_speed(float axis_value, float world_delta_seconds, bool rht_trggr);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
