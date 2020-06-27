@@ -67,3 +67,30 @@ void Amaster_ship::update_speed(float axis_value, float world_delta_seconds, boo
 		current_acceleration = 0;
 	}
 }
+
+void Amaster_ship::allocate_to_shields() {
+	if (current_shields != base_shields) {
+		current_shields = FMath::Clamp(current_shields + shd_rchrg, 0, base_shields);
+	}
+}
+
+void Amaster_ship::allocate_to_weapons() {
+	if (current_lasers != base_lasers) {
+		current_lasers = FMath::Clamp(current_lasers + lsr_rchrg, 0, base_lasers);
+	}
+}
+
+void Amaster_ship::allocate_to_systems() {
+	if (current_systems != base_systems) {
+		current_systems = FMath::Clamp(current_systems + sys_rchrg, 0, base_systems);
+	}
+}
+
+void Amaster_ship::allocate_to_engines() {
+	if (current_shields != 0) {
+		current_shields = FMath::Clamp(current_shields - shd_rchrg, 0, base_shields);
+	}
+	if (current_lasers != 0) {
+		current_lasers = FMath::Clamp(current_lasers - lsr_rchrg, 0, base_lasers);
+	}
+}
