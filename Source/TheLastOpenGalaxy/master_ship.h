@@ -34,6 +34,22 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Movement")
 		float min_speed = 0.001;
 
+	// Maximum speed during hyperspeed
+	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
+		float hyper_speed;
+
+	// The acceleration during hyperspeed
+	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
+		float hyper_accel;
+
+	// The time elapsed before going to hyperspeed
+	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
+		float hyper_time;
+
+	// The rotation scaling factor during hyperspeed
+	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
+		float hyper_rot_factor;
+
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
 		float base_speed;
 
@@ -120,6 +136,9 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Energy Allocation")
 		void allocate_to_engines();
+
+	UFUNCTION(BlueprintCallable, Category = "Hyperspeed")
+		void init_hyper_params();
 
 public:	
 	// Called every frame

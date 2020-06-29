@@ -41,22 +41,35 @@ void Amaster_ship::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 }
 
 void Amaster_ship::update_pitch(float axis_value) {
-	current_pitch = - base_pitch * axis_value;
+	if (energy_allocation == Allocation::engines) {
+		current_pitch = -base_pitch * hyper_rot_factor * axis_value;
+	}
+	else {
+		current_pitch = -base_pitch * axis_value;
+	}
 }
 
 void Amaster_ship::update_yaw(float axis_value) {
-	current_yaw = base_yaw * axis_value;
+	if (energy_allocation == Allocation::engines) {
+		current_yaw = base_yaw * hyper_rot_factor * axis_value;
+	}
+	else {
+		current_yaw = base_yaw * axis_value;
+	}
 }
 
 void Amaster_ship::update_roll(float axis_value) {
-	current_roll = base_roll * axis_value;
+	if (energy_allocation == Allocation::engines) {
+		current_roll = -base_roll * hyper_rot_factor * axis_value;
+	}
+	else {
+		current_roll = base_roll * axis_value;
+	}
 }
 
 void Amaster_ship::update_speed(float axis_value, float world_delta_seconds, bool rht_trggr) {
-	// hyper_speed hyper_accel hyper_engine_time
-
-	if (energy_allocation == Allocation::engines &&  current_speed < 10*base_speed) {
-		current_speed += 0.1 * base_acceleration * world_delta_seconds;
+	if (energy_allocation == Allocation::engines &&  current_speed < hyper_speed) {
+		current_speed += hyper_accel * world_delta_seconds;
 		current_acceleration = 0;
 	}
 	else {
@@ -71,7 +84,7 @@ void Amaster_ship::update_speed(float axis_value, float world_delta_seconds, boo
 			current_speed = FMath::Clamp(FMath::FInterpTo(current_speed, target_speed, world_delta_seconds, 4.0f), min_speed, base_speed);
 		}
 		else if (current_speed > base_speed) {
-			current_speed -= 0.1 * base_acceleration * world_delta_seconds;
+			current_speed -= hyper_accel * world_delta_seconds;
 			current_acceleration = 0;
 		}
 		else {
@@ -105,4 +118,11 @@ void Amaster_ship::allocate_to_engines() {
 	if (current_lasers != 0) {
 		current_lasers = FMath::Clamp(current_lasers - lsr_rchrg, 0, base_lasers);
 	}
+}
+
+void Amaster_ship::init_hyper_params() {
+	hyper_speed = 10 * base_speed;
+	hyper_accel = 0.1 * base_acceleration;
+	hyper_rot_factor = 0;
+	hyper_time = 3;
 }
