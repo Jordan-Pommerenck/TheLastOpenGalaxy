@@ -53,18 +53,30 @@ void Amaster_ship::update_roll(float axis_value) {
 }
 
 void Amaster_ship::update_speed(float axis_value, float world_delta_seconds, bool rht_trggr) {
-	int the_trggr = -1;
-	if (axis_value > 0) {
-		if (rht_trggr) {
-			the_trggr = 1;
-		}
-		current_acceleration = axis_value * base_acceleration * the_trggr;
-		float target_speed = current_speed + (current_acceleration * world_delta_seconds);
+	// hyper_speed hyper_accel hyper_engine_time
 
-		current_speed = FMath::Clamp(FMath::FInterpTo(current_speed, target_speed, world_delta_seconds, 4.0f), min_speed, base_speed);
+	if (energy_allocation == Allocation::engines &&  current_speed < 10*base_speed) {
+		current_speed += 0.1 * base_acceleration * world_delta_seconds;
+		current_acceleration = 0;
 	}
 	else {
-		current_acceleration = 0;
+		int the_trggr = -1;
+		if (axis_value > 0 && (current_speed <= base_speed)) {
+			if (rht_trggr) {
+				the_trggr = 1;
+			}
+			current_acceleration = axis_value * base_acceleration * the_trggr;
+			float target_speed = current_speed + (current_acceleration * world_delta_seconds);
+
+			current_speed = FMath::Clamp(FMath::FInterpTo(current_speed, target_speed, world_delta_seconds, 4.0f), min_speed, base_speed);
+		}
+		else if (current_speed > base_speed) {
+			current_speed -= 0.1 * base_acceleration * world_delta_seconds;
+			current_acceleration = 0;
+		}
+		else {
+			current_acceleration = 0;
+		}
 	}
 }
 
