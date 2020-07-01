@@ -27,9 +27,9 @@ void Amaster_ship::Tick(float DeltaTime)
 
 	FRotator new_rotation = FRotator(current_pitch * DeltaTime, current_yaw * DeltaTime, current_roll * DeltaTime); // +(GetActorRotation());
 	
-	AddActorLocalOffset(new_location, false, 0, ETeleportType::None);
+	AddActorLocalOffset(new_location, true, 0, ETeleportType::None);
 	AddActorLocalRotation(new_rotation, false, 0, ETeleportType::None);
-	// SetActorLocationAndRotation(GetActorLocation(), GetActorRotation(), false, 0, ETeleportType::None);
+	//SetActorLocationAndRotation(GetActorLocation(), GetActorRotation(), false, 0, ETeleportType::None);
 
 }
 
