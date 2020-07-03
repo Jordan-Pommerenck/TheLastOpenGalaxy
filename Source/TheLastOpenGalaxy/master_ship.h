@@ -29,89 +29,102 @@ protected:
 
 	// An Enumeration for the energy allocation
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
-		Allocation energy_allocation = Allocation::shields;
+		Allocation energy_allocation {
+		Allocation::shields
+	};
 
 	UPROPERTY(BlueprintReadOnly, Category = "Movement")
-		float min_speed = 0.001;
+		float min_speed{ 0.001 };
 
 	// Maximum speed during hyperspeed
 	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
-		float hyper_speed;
+		float hyper_speed{ 0 };
 
 	// The acceleration during hyperspeed
 	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
-		float hyper_accel;
+		float hyper_accel{ 0 };
 
 	// The time elapsed before going to hyperspeed
 	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
-		float hyper_time;
+		float hyper_time{ 0 };
 
 	// The rotation scaling factor during hyperspeed
 	UPROPERTY(BlueprintReadWrite, Category = "Hyperspeed")
-		float hyper_rot_factor;
+		float hyper_rot_factor{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float base_speed;
+		float base_speed{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float current_speed;
+		float current_speed{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float base_acceleration;
+		float base_acceleration{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float current_acceleration;
+		float current_acceleration{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float base_pitch;
+		float base_pitch{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float base_yaw;
+		float base_yaw{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float base_roll;
+		float base_roll{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float current_pitch;
+		float current_pitch{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float current_yaw;
+		float current_yaw{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Movement")
-		float current_roll;
+		float current_roll{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int base_hull;
+		int base_hull{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int current_hull;
+		int current_hull{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int base_shields;
+		int base_shields{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int current_shields;
+		int current_shields{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int base_systems;
+		int base_systems{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int current_systems;
+		int current_systems{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int base_lasers;
+		int base_lasers{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int current_lasers;
+		int current_lasers{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int shd_rchrg;
+		int shd_rchrg{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int lsr_rchrg;
+		int lsr_rchrg{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		int sys_rchrg;
+		int sys_rchrg{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float lsr_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Targeting")
+		AActor* my_target {
+		NULL
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		TArray<FVector> laser_locations;
 
 	UFUNCTION(BlueprintCallable, Category = "Transform")
 		void update_pitch(float axis_value);
@@ -137,8 +150,8 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Energy Allocation")
 		void allocate_to_engines();
 
-	UFUNCTION(BlueprintCallable, Category = "Hyperspeed")
-		void init_hyper_params();
+	UFUNCTION(BlueprintCallable, Category = "Damage")
+		void calculate_hull_damage(int hull_damage);
 
 public:	
 	// Called every frame

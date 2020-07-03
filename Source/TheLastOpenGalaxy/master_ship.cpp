@@ -15,7 +15,6 @@ Amaster_ship::Amaster_ship()
 void Amaster_ship::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -120,9 +119,6 @@ void Amaster_ship::allocate_to_engines() {
 	}
 }
 
-void Amaster_ship::init_hyper_params() {
-	hyper_speed = 10 * base_speed;
-	hyper_accel = 0.1 * base_acceleration;
-	hyper_rot_factor = 0;
-	hyper_time = 3;
+void Amaster_ship::calculate_hull_damage(int hull_damage) {
+	current_hull = FMath::Clamp(current_hull - hull_damage, 0, current_hull);
 }
