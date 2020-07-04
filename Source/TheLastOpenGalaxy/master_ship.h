@@ -118,6 +118,10 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float lsr_fire_rate{ 0 };
 
+	// The scale of the ship in meters
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float base_scale{ 0 };
+
 	UPROPERTY(BlueprintReadWrite, Category = "Targeting")
 		AActor* my_target {
 		NULL
