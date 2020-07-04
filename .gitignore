@@ -12,6 +12,7 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
+*.log
 
 # Ignore the sub folders
 Levels/
