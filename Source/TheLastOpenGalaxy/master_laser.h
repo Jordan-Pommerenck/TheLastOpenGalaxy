@@ -44,6 +44,28 @@ protected:
 		NULL
 	};
 
+	// The laser has not hit a target
+	UPROPERTY(BlueprintReadWrite, Category = "Targeting")
+		bool no_hit{ true };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Sound")
+		USoundBase* laser_sound {
+		NULL
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Sound")
+		USoundBase* reload_sound {
+		NULL
+	};
+
+	// The volume of the laser sound
+	UPROPERTY(BlueprintReadWrite, Category = "Sound")
+		float laser_volume{ 0 };
+
+	// The volume of the reload sound
+	UPROPERTY(BlueprintReadWrite, Category = "Sound")
+		float reload_volume{ 0 };
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

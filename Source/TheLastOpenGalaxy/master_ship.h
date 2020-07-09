@@ -127,6 +127,11 @@ protected:
 		NULL
 	};
 
+	UPROPERTY(BlueprintReadWrite, Category = "Sound")
+		USoundBase* engine_hum {
+		NULL
+	};
+
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		TArray<FVector> laser_locations;
 
