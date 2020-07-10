@@ -66,6 +66,10 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Sound")
 		float reload_volume{ 0 };
 
+	// The volume of the reload sound
+	UPROPERTY(BlueprintReadWrite, Meta = (ExposeOnSpawn = "true"), Category = "Sound")
+		FName prmy_weap_name;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
