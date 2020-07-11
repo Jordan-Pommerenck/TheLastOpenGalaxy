@@ -132,6 +132,10 @@ protected:
 		NULL
 	};
 
+	// The name of the primary weapon to fire
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		FName prm_weap_name;
+
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		TArray<FVector> laser_locations;
 

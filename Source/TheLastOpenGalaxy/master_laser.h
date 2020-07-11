@@ -20,23 +20,23 @@ protected:
 	virtual void BeginPlay() override;
 
 	// The base damage to be applied
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameters")
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_damage{ 0 };
 
 	// The base speed of the laser
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameters")
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_speed{ 0 };
 
 	// The base lifespan of the laser before destroyed
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameters")
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_lifespan{ 0 };
 
 	// The base scale of the laser
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameters")
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_scale{ 0 };
 
 	// The base scale of the laser
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameters")
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float target_distance{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Targeting")
@@ -66,8 +66,8 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Sound")
 		float reload_volume{ 0 };
 
-	// The volume of the reload sound
-	UPROPERTY(BlueprintReadWrite, Meta = (ExposeOnSpawn = "true"), Category = "Sound")
+	// The name of the primary weapon to fire
+	UPROPERTY(BlueprintReadWrite, Meta = (ExposeOnSpawn = "true"), Category = "Base Parameters")
 		FName prmy_weap_name;
 
 public:	
