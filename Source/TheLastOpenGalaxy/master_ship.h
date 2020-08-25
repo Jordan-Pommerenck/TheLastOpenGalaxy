@@ -14,6 +14,31 @@ enum class Allocation : uint8  {
 	engines UMETA(DisplayName = "engines")
 };
 
+UENUM(BlueprintType)
+enum class Team : uint8 {
+	red  UMETA(DisplayName = "red"),
+	blue  UMETA(DisplayName = "blue")
+};
+
+UENUM(BlueprintType)
+enum class Ship_Class : uint8 {
+	fighter  UMETA(DisplayName = "fighter"),
+	superiority  UMETA(DisplayName = "superiority"),
+	bomber  UMETA(DisplayName = "bomber")
+};
+
+UENUM(BlueprintType)
+enum class Laser_Type : uint8 {
+	red  UMETA(DisplayName = "red"),
+	blue  UMETA(DisplayName = "blue")
+};
+
+UENUM(BlueprintType)
+enum class Warhead_Type : uint8 {
+	missile  UMETA(DisplayName = "missile"),
+	torpedo  UMETA(DisplayName = "torpedo")
+};
+
 UCLASS()
 class THELASTOPENGALAXY_API Amaster_ship : public APawn
 {
@@ -31,6 +56,26 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
 		Allocation energy_allocation {
 		Allocation::shields
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Team my_team {
+		Team::red
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Ship_Class my_class {
+		Ship_Class::fighter
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type my_laser_type {
+		Laser_Type::red
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Warhead_Type my_warhead_type {
+		Warhead_Type::missile
 	};
 
 	UPROPERTY(BlueprintReadOnly, Category = "Movement")
@@ -107,6 +152,12 @@ protected:
 		int current_lasers{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		int base_warheads{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		int current_warheads{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		int shd_rchrg{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
@@ -118,9 +169,16 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float lsr_fire_rate{ 0 };
 
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float warhead_fire_rate{ 0 };
+
 	// The scale of the ship in meters
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_scale{ 0 };
+
+	// The name of the ship
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		FName my_name{""};
 
 	UPROPERTY(BlueprintReadWrite, Category = "Targeting")
 		AActor* my_target {
@@ -133,8 +191,8 @@ protected:
 	};
 
 	// The name of the primary weapon to fire
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		FName prm_weap_name;
+	//UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+	//	FName prm_weap_name;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		TArray<FVector> laser_locations;

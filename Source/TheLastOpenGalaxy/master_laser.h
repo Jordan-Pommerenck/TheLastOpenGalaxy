@@ -66,9 +66,11 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Sound")
 		float reload_volume{ 0 };
 
+	// KEEP THIS BELOW AS AN EXAMPLE OF EXPONSE ON SPAWN!
+
 	// The name of the primary weapon to fire
-	UPROPERTY(BlueprintReadWrite, Meta = (ExposeOnSpawn = "true"), Category = "Base Parameters")
-		FName prmy_weap_name;
+	//UPROPERTY(BlueprintReadWrite, Meta = (ExposeOnSpawn = "true"), Category = "Base Parameters")
+	//	FName prmy_weap_name;
 
 public:	
 	// Called every frame
