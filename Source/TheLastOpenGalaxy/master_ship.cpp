@@ -59,7 +59,7 @@ void Amaster_ship::update_yaw(float axis_value) {
 
 void Amaster_ship::update_roll(float axis_value) {
 	if (energy_allocation == Allocation::engines) {
-		current_roll = -base_roll * hyper_rot_factor * axis_value;
+		current_roll = base_roll * hyper_rot_factor * axis_value;
 	}
 	else {
 		current_roll = base_roll * axis_value;
