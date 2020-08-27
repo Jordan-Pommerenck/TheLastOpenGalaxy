@@ -12,17 +12,5 @@
 				"Engine"
 			]
 		}
-	],
-	"Plugins": [
-		{
-			"Name": "EasyMultiSave",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/7232621c23174bbbbb64c7bfb6583f6f"
-		},
-		{
-			"Name": "JsonCsvToDataTableToStruct",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e2cfedae1a22428a8016768471ca23ca"
-		}
 	]
 }
