@@ -176,6 +176,10 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_scale{ 0 };
 
+	// The scale of the ship in meters
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		bool i_am_disabled{ false };
+
 	// The name of the ship
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		FName my_name{""};
@@ -223,6 +227,9 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Damage")
 		void calculate_hull_damage(int hull_damage);
+
+	UFUNCTION(BlueprintCallable, Category = "System")
+		void check_if_disabled();
 
 public:	
 	// Called every frame
