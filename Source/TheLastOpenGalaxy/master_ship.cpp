@@ -99,8 +99,11 @@ void Amaster_ship::allocate_to_shields() {
 }
 
 void Amaster_ship::allocate_to_weapons() {
-	if (current_lasers != base_lasers) {
-		current_lasers = FMath::Clamp(current_lasers + lsr_rchrg, 0, base_lasers);
+	if (i_am_disabled != true) {
+		if (current_lasers != base_lasers) {
+			check_if_disabled();
+			current_lasers = FMath::Clamp(current_lasers + lsr_rchrg, 0, base_lasers);
+		}
 	}
 }
 
