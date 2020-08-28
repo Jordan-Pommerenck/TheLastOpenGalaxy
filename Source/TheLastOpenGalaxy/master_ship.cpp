@@ -81,8 +81,8 @@ void Amaster_ship::update_speed(float axis_value, float world_delta_seconds, boo
 	}
 	else {
 		check_if_disabled();
-		if (energy_allocation == Allocation::engines && current_speed < hyper_speed) {
-			current_speed += hyper_accel * world_delta_seconds;
+		if (energy_allocation == Allocation::engines) {
+			current_speed = FMath::Clamp(current_speed + hyper_accel * world_delta_seconds, min_speed, hyper_speed);
 			current_acceleration = 0;
 		}
 		else {
