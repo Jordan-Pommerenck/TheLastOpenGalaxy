@@ -40,68 +40,84 @@ void Amaster_ship::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 }
 
 void Amaster_ship::update_pitch(float axis_value) {
-	if (energy_allocation == Allocation::engines) {
-		current_pitch = -base_pitch * hyper_rot_factor * axis_value;
-	}
-	else {
-		current_pitch = -base_pitch * axis_value;
+	if (i_am_disabled != true) {
+		if (energy_allocation == Allocation::engines) {
+			current_pitch = -base_pitch * hyper_rot_factor * axis_value;
+		}
+		else {
+			current_pitch = -base_pitch * axis_value;
+		}
 	}
 }
 
 void Amaster_ship::update_yaw(float axis_value) {
-	if (energy_allocation == Allocation::engines) {
-		current_yaw = base_yaw * hyper_rot_factor * axis_value;
-	}
-	else {
-		current_yaw = base_yaw * axis_value;
+	if (i_am_disabled != true) {
+		if (energy_allocation == Allocation::engines) {
+			current_yaw = base_yaw * hyper_rot_factor * axis_value;
+		}
+		else {
+			current_yaw = base_yaw * axis_value;
+		}
 	}
 }
 
 void Amaster_ship::update_roll(float axis_value) {
-	if (energy_allocation == Allocation::engines) {
-		current_roll = base_roll * hyper_rot_factor * axis_value;
-	}
-	else {
-		current_roll = base_roll * axis_value;
+	if (i_am_disabled != true) {
+		if (energy_allocation == Allocation::engines) {
+			current_roll = base_roll * hyper_rot_factor * axis_value;
+		}
+		else {
+			current_roll = base_roll * axis_value;
+		}
 	}
 }
 
 void Amaster_ship::update_speed(float axis_value, float world_delta_seconds, bool rht_trggr) {
-	if (energy_allocation == Allocation::engines &&  current_speed < hyper_speed) {
-		current_speed += hyper_accel * world_delta_seconds;
-		current_acceleration = 0;
+	if (i_am_disabled == true) {
+		check_if_disabled();
+
+		// reduce the current speed to 0.
+		current_speed = FMath::Clamp(FMath::FInterpTo(current_speed, 0, world_delta_seconds, 0.5f), min_speed, base_speed);
 	}
 	else {
-		int the_trggr = -1;
-		if (axis_value > 0 && (current_speed <= base_speed)) {
-			if (rht_trggr) {
-				the_trggr = 1;
-			}
-			current_acceleration = axis_value * base_acceleration * the_trggr;
-			float target_speed = current_speed + (current_acceleration * world_delta_seconds);
-
-			current_speed = FMath::Clamp(FMath::FInterpTo(current_speed, target_speed, world_delta_seconds, 4.0f), min_speed, base_speed);
-		}
-		else if (current_speed > base_speed) {
-			current_speed -= hyper_accel * world_delta_seconds;
+		check_if_disabled();
+		if (energy_allocation == Allocation::engines && current_speed < hyper_speed) {
+			current_speed += hyper_accel * world_delta_seconds;
 			current_acceleration = 0;
 		}
 		else {
-			current_acceleration = 0;
+			int the_trggr = -1;
+			if (axis_value > 0 && (current_speed <= base_speed)) {
+				if (rht_trggr) {
+					the_trggr = 1;
+				}
+				current_acceleration = axis_value * base_acceleration * the_trggr;
+				float target_speed = current_speed + (current_acceleration * world_delta_seconds);
+
+				current_speed = FMath::Clamp(FMath::FInterpTo(current_speed, target_speed, world_delta_seconds, 4.0f), min_speed, base_speed);
+			}
+			else if (current_speed > base_speed) {
+				current_speed -= hyper_accel * world_delta_seconds;
+				current_acceleration = 0;
+			}
+			else {
+				current_acceleration = 0;
+			}
 		}
 	}
 }
 
 void Amaster_ship::allocate_to_shields() {
-	if (current_shields != base_shields) {
-		current_shields = FMath::Clamp(current_shields + shd_rchrg, 0, base_shields);
+	if (i_am_disabled == false) {
+		if (current_shields != base_shields) {
+			current_shields = FMath::Clamp(current_shields + shd_rchrg, 0, base_shields);
+		}
 	}
 }
 
 void Amaster_ship::allocate_to_weapons() {
-	if (i_am_disabled != true) {
+	if (i_am_disabled == false) {
 		if (current_lasers != base_lasers) {
-			check_if_disabled();
 			current_lasers = FMath::Clamp(current_lasers + lsr_rchrg, 0, base_lasers);
 		}
 	}
@@ -114,11 +130,13 @@ void Amaster_ship::allocate_to_systems() {
 }
 
 void Amaster_ship::allocate_to_engines() {
-	if (current_shields != 0) {
-		current_shields = FMath::Clamp(current_shields - shd_rchrg, 0, base_shields);
-	}
-	if (current_lasers != 0) {
-		current_lasers = FMath::Clamp(current_lasers - lsr_rchrg, 0, base_lasers);
+	if (i_am_disabled == false) {
+		if (current_shields != 0) {
+			current_shields = FMath::Clamp(current_shields - shd_rchrg, 0, base_shields);
+		}
+		if (current_lasers != 0) {
+			current_lasers = FMath::Clamp(current_lasers - lsr_rchrg, 0, base_lasers);
+		}
 	}
 }
 
@@ -130,6 +148,11 @@ void Amaster_ship::check_if_disabled() {
 	// if the current_systems is every less than 40% of the base_systems.
 	if (10*current_systems <= 4*base_systems) {
 		i_am_disabled = true;
+
+		// reduce the lasers and shields until they are both 0.
+		current_lasers = 0;
+		current_shields = 0;
+
 	}
 	else {
 		i_am_disabled = false;
