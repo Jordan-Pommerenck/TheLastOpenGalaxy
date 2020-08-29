@@ -22,9 +22,18 @@ enum class Team : uint8 {
 
 UENUM(BlueprintType)
 enum class Ship_Class : uint8 {
-	fighter  UMETA(DisplayName = "fighter"),
-	superiority  UMETA(DisplayName = "superiority"),
-	bomber  UMETA(DisplayName = "bomber")
+	fighter  UMETA(DisplayName = "Fighter"),
+	superiority  UMETA(DisplayName = "Superiority"),
+	bomber  UMETA(DisplayName = "Bomber"),
+	anti_bomber  UMETA(DisplayName = "Anti-Bomber"),
+	freighter  UMETA(DisplayName = "Freighter"),
+	corvette  UMETA(DisplayName = "Corvette"),
+	carrier  UMETA(DisplayName = "Carrier"),
+	frigate  UMETA(DisplayName = "Frigate"),
+	cruiser  UMETA(DisplayName = "Cruiser"),
+	destroyer  UMETA(DisplayName = "Destroyer"),
+	battlecruiser  UMETA(DisplayName = "Battlecruiser"),
+	dreadnaught  UMETA(DisplayName = "Dreadnaught")
 };
 
 UENUM(BlueprintType)
@@ -194,9 +203,10 @@ protected:
 		NULL
 	};
 
-	// The name of the primary weapon to fire
-	//UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-	//	FName prm_weap_name;
+	UPROPERTY(BlueprintReadWrite, Category = "Targeting")
+		TArray<AActor*> fighter_targets{
+		NULL
+	};
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		TArray<FVector> laser_locations;
