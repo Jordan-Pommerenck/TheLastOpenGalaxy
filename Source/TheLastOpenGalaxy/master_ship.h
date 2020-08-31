@@ -208,17 +208,23 @@ protected:
 		NULL
 	};
 
+	// The rotator to update
+	UPROPERTY(BlueprintReadWrite, Category = "Movement")
+		FRotator update_rotator {
+		0, 0, 0
+	};
+
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		TArray<FVector> laser_locations;
 
 	UFUNCTION(BlueprintCallable, Category = "Transform")
-		void update_pitch(float axis_value);
+		void update_pitch(float axis_value, float world_delta_seconds);
 
 	UFUNCTION(BlueprintCallable, Category = "Transform")
-		void update_yaw(float axis_value);
+		void update_yaw(float axis_value, float world_delta_seconds);
 
 	UFUNCTION(BlueprintCallable, Category = "Transform")
-		void update_roll(float axis_value);
+		void update_roll(float axis_value, float world_delta_seconds);
 
 	UFUNCTION(BlueprintCallable, Category = "Transform")
 		void update_speed(float axis_value, float world_delta_seconds, bool rht_trggr);

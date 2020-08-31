@@ -15,6 +15,7 @@ Amaster_ship::Amaster_ship()
 void Amaster_ship::BeginPlay()
 {
 	Super::BeginPlay();
+
 }
 
 // Called every frame
@@ -24,10 +25,12 @@ void Amaster_ship::Tick(float DeltaTime)
 
 	FVector new_location = FVector((current_speed * DeltaTime), 0, 0); //+ GetActorLocation();
 
-	FRotator new_rotation = FRotator(current_pitch * DeltaTime, current_yaw * DeltaTime, current_roll * DeltaTime); // +(GetActorRotation());
+	//FRotator new_rotation = FRotator(current_pitch * DeltaTime, current_yaw * DeltaTime, current_roll * DeltaTime); // +(GetActorRotation());
+	//AddActorLocalRotation(new_rotation, false, 0, ETeleportType::None);
 	
+	SetActorRelativeRotation(FQuat(update_rotator), false, 0, ETeleportType::None);
 	AddActorLocalOffset(new_location, true, 0, ETeleportType::None);
-	AddActorLocalRotation(new_rotation, false, 0, ETeleportType::None);
+
 	//SetActorLocationAndRotation(GetActorLocation(), GetActorRotation(), false, 0, ETeleportType::None);
 
 }
@@ -39,7 +42,7 @@ void Amaster_ship::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 }
 
-void Amaster_ship::update_pitch(float axis_value) {
+void Amaster_ship::update_pitch(float axis_value, float world_delta_seconds) {
 	if (i_am_disabled != true) {
 		if (energy_allocation == Allocation::engines) {
 			current_pitch = -base_pitch * hyper_rot_factor * axis_value;
@@ -47,10 +50,11 @@ void Amaster_ship::update_pitch(float axis_value) {
 		else {
 			current_pitch = -base_pitch * axis_value;
 		}
+		update_rotator = FRotator(FQuat(update_rotator) * FQuat(FRotator(current_pitch * world_delta_seconds, 0, 0)));
 	}
 }
 
-void Amaster_ship::update_yaw(float axis_value) {
+void Amaster_ship::update_yaw(float axis_value, float world_delta_seconds) {
 	if (i_am_disabled != true) {
 		if (energy_allocation == Allocation::engines) {
 			current_yaw = base_yaw * hyper_rot_factor * axis_value;
@@ -58,10 +62,11 @@ void Amaster_ship::update_yaw(float axis_value) {
 		else {
 			current_yaw = base_yaw * axis_value;
 		}
+		update_rotator = FRotator(FQuat(update_rotator) * FQuat(FRotator(0, current_yaw * world_delta_seconds, 0)));
 	}
 }
 
-void Amaster_ship::update_roll(float axis_value) {
+void Amaster_ship::update_roll(float axis_value, float world_delta_seconds) {
 	if (i_am_disabled != true) {
 		if (energy_allocation == Allocation::engines) {
 			current_roll = base_roll * hyper_rot_factor * axis_value;
@@ -69,6 +74,7 @@ void Amaster_ship::update_roll(float axis_value) {
 		else {
 			current_roll = base_roll * axis_value;
 		}
+		update_rotator = FRotator(FQuat(update_rotator) * FQuat(FRotator(0, 0, current_roll * world_delta_seconds)));
 	}
 }
 
