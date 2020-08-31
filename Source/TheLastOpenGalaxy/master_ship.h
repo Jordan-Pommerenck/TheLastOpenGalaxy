@@ -217,6 +217,9 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		TArray<FVector> laser_locations;
 
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float collision_diameter{ 0 };
+
 	UFUNCTION(BlueprintCallable, Category = "Transform")
 		void update_pitch(float axis_value, float world_delta_seconds);
 
