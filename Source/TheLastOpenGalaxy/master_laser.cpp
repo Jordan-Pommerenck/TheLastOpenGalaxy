@@ -23,5 +23,7 @@ void Amaster_laser::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//FVector new_location = FVector((base_speed * DeltaTime), 0, 0);
+	//AddActorLocalOffset(new_location, true, 0, ETeleportType::None);
 }
 
