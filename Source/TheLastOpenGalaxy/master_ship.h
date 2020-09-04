@@ -50,6 +50,15 @@ enum class Warhead_Type : uint8 {
 	torpedo  UMETA(DisplayName = "torpedo")
 };
 
+UENUM(BlueprintType)
+enum class Weapon_Select : uint8 {
+	primary  UMETA(DisplayName = "Primary"),
+	secondary  UMETA(DisplayName = "Secondary"),
+	tertiary UMETA(DisplayName = "Tertiary"),
+	//quaternary UMETA(DisplayName = "Quaternary"),
+	//quinary UMETA(DisplayName = "Quinary")
+};
+
 UCLASS()
 class THELASTOPENGALAXY_API Amaster_ship : public APawn
 {
@@ -87,6 +96,11 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
 		Warhead_Type my_warhead_type {
 		Warhead_Type::missile
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Weapon_Select which_weapon {
+		Weapon_Select::primary
 	};
 
 	UPROPERTY(BlueprintReadOnly, Category = "Movement")
