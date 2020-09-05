@@ -193,10 +193,13 @@ protected:
 		int sys_rchrg{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		float lsr_fire_rate{ 0 };
+		float prmy_fire_rate{ 0 };
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		float warhead_fire_rate{ 0 };
+		float scdy_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float trty_fire_rate{ 0 };
 
 	// The scale of the ship in meters
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
