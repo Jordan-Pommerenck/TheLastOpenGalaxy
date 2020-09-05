@@ -38,14 +38,11 @@ enum class Ship_Class : uint8 {
 
 UENUM(BlueprintType)
 enum class Laser_Type : uint8 {
+	none  UMETA(DisplayName = "None"),
 	red  UMETA(DisplayName = "red-laser"),
 	green  UMETA(DisplayName = "green-laser"),
 	blue  UMETA(DisplayName = "blue-laser"),
-	violet  UMETA(DisplayName = "violet-laser")
-};
-
-UENUM(BlueprintType)
-enum class Warhead_Type : uint8 {
+	violet  UMETA(DisplayName = "violet-laser"),
 	missile  UMETA(DisplayName = "missile"),
 	torpedo  UMETA(DisplayName = "torpedo")
 };
@@ -89,13 +86,17 @@ protected:
 	};
 
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
-		Laser_Type my_laser_type {
+		Laser_Type prmy_weap_type {
 		Laser_Type::red
 	};
 
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
-		Warhead_Type my_warhead_type {
-		Warhead_Type::missile
+		Laser_Type scdy_weap_type {
+		Laser_Type::none
+	};
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type trty_weap_type {
+		Laser_Type::none
 	};
 
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
