@@ -234,8 +234,15 @@ protected:
 		0, 0, 0
 	};
 
+	// The array of vectors to store each primary weapon spawn point
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
-		TArray<FVector> laser_locations;
+		TArray<FVector> prmy_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		TArray<FVector> scdy_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		TArray<FVector> trty_locations;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float collision_diameter{ 0 };
