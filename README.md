@@ -1,10 +1,6 @@
 # TheLastOpenGalaxy
 
-The Last Open Galaxy Game Playlist on YouTube is a playlist of 4K videos dedicated to showing the creative process behind the entire 
-game's continuing development. As the name suggests, The Last Open Galaxy is a game concept centered around the user being able to explore 
-the galaxy, engage in 1st or 3rd person space combat, grow wealth through trade, and build their fleet.
+The Last Open Galaxy is an Open Source Game developed using Unreal Engine featuring 1st or 3rd person space combat.
 
-The game will be freely available on both Steam and GOG. The source code is available on GitHub.  A Discord channel is available for users 
-wishing to get involved on the project or to develop mods for the game.
+The game will be freely available on Steam. A Discord channel is available for users wishing to stay up-to-date on the development of the game, wishing to get involved on the project, or to develop a mod for the game. https://discord.gg/5vfDkg4
 
-Developed with Unreal Engine 4
