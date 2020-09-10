@@ -12,5 +12,12 @@
 				"Engine"
 			]
 		}
+	],
+	"Plugins": [
+		{
+			"Name": "JsonCsvToDataTableToStruct",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e2cfedae1a22428a8016768471ca23ca"
+		}
 	]
 }
