@@ -1,0 +1,59 @@
+{
+		"display_name": "scout_engagement",
+		"level_description": "This level tests your ability to take on 8 scouts.  Although outnumbered, your squadren of heavy fighters is armed with missiles.",
+		"level_name": "Test-System-A",
+		"all_spawn_craft": [
+			{
+				"names": "Blue,8",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/long_range_scout.long_range_scout_C'",
+				"center_location":
+				{
+					"X": 58976,
+					"Y": 0,
+					"Z": 0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 180
+				},
+				"difficulty_level": "MEDIUM",
+				"team": "blue",
+				"formation_shape": "vic"
+			},
+			{
+				"names": "Red 2, Red 3, Red 4",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
+				"center_location":
+				{
+					"X": 0,
+					"Y": 0,
+					"Z": 0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "NIGHTMARE",
+				"team": "red",
+				"formation_shape": "vic"
+			}
+		],
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
+		"human_loc":
+		{
+			"X": -1624,
+			"Y": 0,
+			"Z": 0
+		},
+		"human_rot":
+		{
+			"Pitch": 0,
+			"Yaw": 0,
+			"Roll": 0
+		},
+		"human_team": "red"
+	}
