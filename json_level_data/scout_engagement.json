@@ -9,16 +9,16 @@
 				"center_location":
 				{
 					"X": 58976,
-					"Y": 0,
+					"Y": 15000,
 					"Z": 0
 				},
 				"center_rotation":
 				{
 					"Pitch": 0,
-					"Yaw": 0,
-					"Roll": 180
+					"Yaw": 180,
+					"Roll": 0
 				},
-				"difficulty_level": "MEDIUM",
+				"difficulty_level": "HARD",
 				"team": "blue",
 				"formation_shape": "vic"
 			},
@@ -28,7 +28,7 @@
 				"center_location":
 				{
 					"X": 0,
-					"Y": 0,
+					"Y": -1200,
 					"Z": 0
 				},
 				"center_rotation":
