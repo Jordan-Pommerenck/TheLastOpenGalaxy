@@ -23,6 +23,25 @@
 				"formation_shape": "vic"
 			},
 			{
+				"names": "Sigma,8",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/long_range_scout.long_range_scout_C'",
+				"center_location":
+				{
+					"X": 58976,
+					"Y": 15000,
+					"Z": 2500
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 180,
+					"Roll": 0
+				},
+				"difficulty_level": "NIGHTMARE",
+				"team": "blue",
+				"formation_shape": "vic"
+			},
+			{
 				"names": "Red 2, Red 3, Red 4",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 				"center_location":
