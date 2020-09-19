@@ -1,15 +1,17 @@
 {
-		"display_name": "scout_engagement",
-		"level_description": "This level tests your ability to take on 8 scouts.  Although outnumbered, your squadren of heavy fighters is armed with missiles.",
+		"display_name": "Scout Engagement [8 on 4]",
+		"level_description": "	This level tests your ability to take on 8 enemy scouts.  Although outnumbered 2:1, your squadren of heavy fighters possess superior firepower as well as shielding and are armed with powerful torpedos.
+		
+		TIPS: Be careful to avoid letting the more nimble scouts outmaneuver your craft. Focus your attention on the scouts that are engaged with you first. Your teamates have sufficient shielding to survive until you can assist them. Blue squadren is far more dangerous than Sigma squadren",
 		"level_name": "Test-System-A",
 		"all_spawn_craft": [
 			{
-				"names": "Blue,8",
+				"names": "Blue,4",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/long_range_scout.long_range_scout_C'",
 				"center_location":
 				{
-					"X": 58976,
-					"Y": 15000,
+					"X": 100000,
+					"Y": 5000,
 					"Z": 0
 				},
 				"center_rotation":
@@ -18,17 +20,17 @@
 					"Yaw": 180,
 					"Roll": 0
 				},
-				"difficulty_level": "HARD",
+				"difficulty_level": "NIGHTMARE",
 				"team": "blue",
 				"formation_shape": "vic"
 			},
 			{
-				"names": "Sigma,8",
+				"names": "Sigma,4",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/long_range_scout.long_range_scout_C'",
 				"center_location":
 				{
-					"X": 58976,
-					"Y": 15000,
+					"X": 100000,
+					"Y": 5000,
 					"Z": 2500
 				},
 				"center_rotation":
@@ -37,7 +39,7 @@
 					"Yaw": 180,
 					"Roll": 0
 				},
-				"difficulty_level": "NIGHTMARE",
+				"difficulty_level": "HARD",
 				"team": "blue",
 				"formation_shape": "vic"
 			},
