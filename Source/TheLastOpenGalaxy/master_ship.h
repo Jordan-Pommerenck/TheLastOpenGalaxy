@@ -39,10 +39,10 @@ enum class Ship_Class : uint8 {
 UENUM(BlueprintType)
 enum class Laser_Type : uint8 {
 	none  UMETA(DisplayName = "None"),
-	red  UMETA(DisplayName = "red-laser"),
-	green  UMETA(DisplayName = "green-laser"),
-	blue  UMETA(DisplayName = "blue-laser"),
-	violet  UMETA(DisplayName = "violet-laser"),
+	red  UMETA(DisplayName = "red"),
+	green  UMETA(DisplayName = "green"),
+	blue  UMETA(DisplayName = "blue"),
+	violet  UMETA(DisplayName = "violet"),
 	missile  UMETA(DisplayName = "missile"),
 	torpedo  UMETA(DisplayName = "torpedo")
 };
