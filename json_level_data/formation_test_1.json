@@ -1,0 +1,61 @@
+{
+		"display_name": "Strategic Formation Test I",
+		"level_description": "	   This level tests your ability to engage an enemy COLUMN formation composed of light fighters.
+		
+		TIPS: Your squadron is in positioned in a WEDGE formation which helps to prevent your ships from obsuring their lines of fire. You should levy your situational awareness and firepower of your unit to overcome the odds and defeat the larger enemy unit.",
+		"level_name": "Test-System-A",
+		"all_spawn_craft": [
+			{
+				"names": "Broadside,12",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/lindwurm_fighter.lindwurm_fighter_C'",
+				"center_location":
+				{
+					"X": 50000,
+					"Y": 8000,
+					"Z": 8000
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 180,
+					"Roll": 0
+				},
+				"difficulty_level": "MEDIUM",
+				"team": "blue",
+				"formation_shape": "column"
+			},
+			{
+				"names": "Red 2, Red 3, Red 4, Red 5",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
+				"center_location":
+				{
+					"X": 15000,
+					"Y": 0,
+					"Z": 1000
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "vic"
+			}
+		],
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
+		"human_loc":
+		{
+			"X": -1624,
+			"Y": 0,
+			"Z": 1000
+		},
+		"human_rot":
+		{
+			"Pitch": 0,
+			"Yaw": 0,
+			"Roll": 0
+		},
+		"human_team": "red"
+	}
