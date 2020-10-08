@@ -150,6 +150,10 @@ void Amaster_ship::calculate_hull_damage(int hull_damage) {
 	current_hull = FMath::Clamp(current_hull - hull_damage, 0, current_hull);
 }
 
+void Amaster_ship::calculate_systems_damage(int system_damage) {
+	current_systems = FMath::Clamp(current_systems - system_damage, 0, current_systems);
+}
+
 void Amaster_ship::check_if_disabled() {
 	// if the current_systems is every less than 40% of the base_systems.
 	if (10*current_systems <= 4*base_systems) {

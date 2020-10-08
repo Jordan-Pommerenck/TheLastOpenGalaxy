@@ -277,6 +277,9 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "System")
 		void check_if_disabled();
 
+	UFUNCTION(BlueprintCallable, Category = "System")
+		void calculate_systems_damage(int system_damage);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
