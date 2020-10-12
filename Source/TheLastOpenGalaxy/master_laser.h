@@ -44,10 +44,6 @@ protected:
 		NULL
 	};
 
-	// The laser has not hit a target
-	UPROPERTY(BlueprintReadWrite, Category = "Targeting")
-		bool no_hit{ true };
-
 	UPROPERTY(BlueprintReadWrite, Category = "Sound")
 		USoundBase* laser_sound {
 		NULL
