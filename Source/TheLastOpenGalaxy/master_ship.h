@@ -205,9 +205,17 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_scale{ 0 };
 
-	// The scale of the ship in meters
+	// Whether the ship is disabled or not
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		bool i_am_disabled{ false };
+
+	// Whether the ship is hypering or not
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		bool i_am_hypering{ false };
+
+	// Whether the ship is escorting or not
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		bool i_need_escorting{ false };
 
 	// The name of the ship
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
@@ -233,6 +241,9 @@ protected:
 		FRotator update_rotator {
 		0, 0, 0
 	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Movement")
+		TArray<FVector> waypoints;
 
 	// The array of vectors to store each primary weapon spawn point
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
