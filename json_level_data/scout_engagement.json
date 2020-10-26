@@ -4,6 +4,7 @@
 		
 		TIPS: Be careful to avoid letting the more nimble scouts outmaneuver your craft. Focus your attention on the scouts that are engaged with you first. Your teamates have sufficient shielding to survive until you can assist them. Blue squadren is far more dangerous than Sigma squadren",
 		"level_name": "Test-System-A",
+		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
 				"names": "Blue,10",
@@ -76,5 +77,6 @@
 			"Yaw": 0,
 			"Roll": 0
 		},
-		"human_team": "red"
+		"human_team": "red",
+		"human_frac_speed": 1.0
 	}
