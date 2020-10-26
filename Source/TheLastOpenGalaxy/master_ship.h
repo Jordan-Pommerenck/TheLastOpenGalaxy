@@ -213,9 +213,17 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		bool i_am_hypering{ false };
 
-	// Whether the ship is escorting or not
+	// Whether the ship needs to be escorted or not
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		bool i_need_escorting{ false };
+
+	// Whether the ship will find and escort nearest ship
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		bool i_need_to_escort{ false };
+
+	// Whether the ship needs to be disabled or not
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		bool i_need_disabled{ false };
 
 	// The name of the ship
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
