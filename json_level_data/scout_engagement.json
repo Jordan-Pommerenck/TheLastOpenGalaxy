@@ -78,5 +78,9 @@
 			"Roll": 0
 		},
 		"human_team": "red",
-		"human_frac_speed": 1.0
+		"human_frac_speed": 1.0,
+		"dogfight_ally_frac_destroy": 1.0,
+		"dogfight_enemy_frac_destroy": 1.0,
+		"escort_ally_frac_destroy": 1.0,
+		"escort_enemy_frac_destroy": 1.0
 	}
