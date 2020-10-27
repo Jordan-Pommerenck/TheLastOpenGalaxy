@@ -23,7 +23,10 @@
 				},
 				"difficulty_level": "NIGHTMARE",
 				"team": "blue",
-				"formation_shape": "vic"
+				"formation_shape": "vic",
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false
 			},
 			{
 				"names": "Sigma,10",
@@ -42,7 +45,10 @@
 				},
 				"difficulty_level": "MEDIUM",
 				"team": "blue",
-				"formation_shape": "vic"
+				"formation_shape": "vic",
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false
 			},
 			{
 				"names": "Red 2, Red 3, Red 4, Red 5, Red 6, Red 7, Red 8, Red 9, Red 10",
@@ -61,7 +67,10 @@
 				},
 				"difficulty_level": "NIGHTMARE",
 				"team": "red",
-				"formation_shape": "vic"
+				"formation_shape": "vic",
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false
 			}
 		],
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
