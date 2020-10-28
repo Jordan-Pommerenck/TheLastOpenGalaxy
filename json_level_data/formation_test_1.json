@@ -26,7 +26,9 @@
 				"formation_shape": "column",
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
-				"i_need_disabled": false
+				"i_need_disabled": false,
+				"waypoints": [],
+				"hyper_in_time": 0
 			},
 			{
 				"names": "Red 2, Red 3, Red 4, Red 5",
@@ -48,7 +50,9 @@
 				"formation_shape": "vic",
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
-				"i_need_disabled": false
+				"i_need_disabled": false,
+				"waypoints": [],
+				"hyper_in_time": 0
 			}
 		],
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
