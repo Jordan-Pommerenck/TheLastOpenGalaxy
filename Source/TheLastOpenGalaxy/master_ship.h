@@ -214,12 +214,20 @@ protected:
 		bool i_am_hypering{ false };
 
 	// Whether the ship needs to be escorted or not
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+	UPROPERTY(BlueprintReadWrite, Category = "Escorting")
 		bool i_need_escorting{ false };
 
 	// Whether the ship will find and escort nearest ship
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+	UPROPERTY(BlueprintReadWrite, Category = "Escorting")
 		bool i_need_to_escort{ false };
+
+	// Whether the ship needs to loop through waypoint array or hyper out
+	UPROPERTY(BlueprintReadWrite, Category = "Escorting")
+		bool waypoint_looping{ false };
+
+	// What array point the ship is currently at
+	UPROPERTY(BlueprintReadWrite, Category = "Escorting")
+		int waypoint_index{ 0 };
 
 	// Whether the ship needs to be disabled or not
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
