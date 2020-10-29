@@ -22,6 +22,7 @@
 				"difficulty_level": "HARD",
 				"team": "blue",
 				"formation_shape": "vic",
+				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
 				"i_need_disabled": false,

@@ -24,9 +24,11 @@
 				"difficulty_level": "MEDIUM",
 				"team": "blue",
 				"formation_shape": "column",
+				"AI_capital_behavior": false,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
 				"i_need_disabled": false,
+				"waypoint_looping": true,
 				"waypoints": [],
 				"hyper_in_time": 0
 			},
@@ -48,9 +50,11 @@
 				"difficulty_level": "HARD",
 				"team": "red",
 				"formation_shape": "vic",
+				"AI_capital_behavior": false,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
 				"i_need_disabled": false,
+				"waypoint_looping": true,
 				"waypoints": [],
 				"hyper_in_time": 0
 			}
