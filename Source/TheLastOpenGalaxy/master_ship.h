@@ -17,7 +17,10 @@ enum class Allocation : uint8  {
 UENUM(BlueprintType)
 enum class Team : uint8 {
 	red  UMETA(DisplayName = "red"),
-	blue  UMETA(DisplayName = "blue")
+	blue  UMETA(DisplayName = "blue"),
+	green  UMETA(DisplayName = "green"),
+	yellow  UMETA(DisplayName = "yellow"),
+	grey  UMETA(DisplayName = "grey")
 };
 
 UENUM(BlueprintType)
@@ -44,7 +47,23 @@ enum class Laser_Type : uint8 {
 	blue  UMETA(DisplayName = "blue"),
 	violet  UMETA(DisplayName = "violet"),
 	missile  UMETA(DisplayName = "missile"),
-	torpedo  UMETA(DisplayName = "torpedo")
+	torpedo  UMETA(DisplayName = "torpedo"),
+	lightred  UMETA(DisplayName = "lightred"),
+	lightgreen  UMETA(DisplayName = "lightgreen"),
+	lightblue  UMETA(DisplayName = "lightblue"),
+	lightviolet  UMETA(DisplayName = "lightviolet"),
+	heavyred  UMETA(DisplayName = "heavyred"),
+	heavygreen  UMETA(DisplayName = "heavygreen"),
+	heavyblue  UMETA(DisplayName = "heavyblue"),
+	heavyviolet  UMETA(DisplayName = "heavyviolet"),
+	superred  UMETA(DisplayName = "superred"),
+	supergreen  UMETA(DisplayName = "supergreen"),
+	superblue  UMETA(DisplayName = "superblue"),
+	superviolet  UMETA(DisplayName = "superviolet"),
+	cruisemissile  UMETA(DisplayName = "cruisemissile"),
+	longrangestandoffweapon  UMETA(DisplayName = "longrangestandoffweapon"),
+	antishipmissile  UMETA(DisplayName = "antishipmissile"),
+	spacelaunchedballisticmissile  UMETA(DisplayName = "spacelaunchedballisticmissile")
 };
 
 UENUM(BlueprintType)
@@ -52,8 +71,13 @@ enum class Weapon_Select : uint8 {
 	primary  UMETA(DisplayName = "Primary"),
 	secondary  UMETA(DisplayName = "Secondary"),
 	tertiary UMETA(DisplayName = "Tertiary"),
-	//quaternary UMETA(DisplayName = "Quaternary"),
-	//quinary UMETA(DisplayName = "Quinary")
+	quaternary UMETA(DisplayName = "Quaternary"),
+	quinary UMETA(DisplayName = "Quinary"),
+	senary UMETA(DisplayName = "Senary"),
+	septenary UMETA(DisplayName = "Septenary"),
+	octonary UMETA(DisplayName = "Octonary"),
+	nonary UMETA(DisplayName = "Nonary"),
+	denary UMETA(DisplayName = "Denary")
 };
 
 UCLASS()
@@ -94,8 +118,44 @@ protected:
 		Laser_Type scdy_weap_type {
 		Laser_Type::none
 	};
+
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
 		Laser_Type trty_weap_type {
+		Laser_Type::none
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type qtry_weap_type {
+		Laser_Type::none
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type qnry_weap_type {
+		Laser_Type::none
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type snry_weap_type {
+		Laser_Type::none
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type spty_weap_type {
+		Laser_Type::none
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type octy_weap_type {
+		Laser_Type::none
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type nnry_weap_type {
+		Laser_Type::none
+	};
+
+	UPROPERTY(BlueprintReadWrite, Category = "Enum")
+		Laser_Type dnry_weap_type {
 		Laser_Type::none
 	};
 
@@ -262,14 +322,35 @@ protected:
 		TArray<FVector> waypoints;
 
 	// The array of vectors to store each primary weapon spawn point
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
 		TArray<FVector> prmy_locations;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
 		TArray<FVector> scdy_locations;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
 		TArray<FVector> trty_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
+		TArray<FVector> qtry_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
+		TArray<FVector> qnry_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
+		TArray<FVector> snry_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
+		TArray<FVector> spty_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
+		TArray<FVector> octy_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
+		TArray<FVector> nnry_locations;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Weapon Locations")
+		TArray<FVector> dnry_locations;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float collision_diameter{ 0 };
