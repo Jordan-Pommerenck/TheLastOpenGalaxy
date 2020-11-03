@@ -262,6 +262,27 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float trty_fire_rate{ 0 };
 
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float qtry_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float qnry_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float snry_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float spty_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float octy_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float nnry_fire_rate{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float dnry_fire_rate{ 0 };
+
 	// The scale of the ship in meters
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float base_scale{ 0 };
