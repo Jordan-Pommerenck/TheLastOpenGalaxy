@@ -42,28 +42,29 @@ enum class Ship_Class : uint8 {
 UENUM(BlueprintType)
 enum class Laser_Type : uint8 {
 	none  UMETA(DisplayName = "None"),
-	red  UMETA(DisplayName = "red"),
-	green  UMETA(DisplayName = "green"),
-	blue  UMETA(DisplayName = "blue"),
-	violet  UMETA(DisplayName = "violet"),
+	lgtred  UMETA(DisplayName = "lgtred"),
+	lgtgreen  UMETA(DisplayName = "lgtgreen"),
+	lgtblue  UMETA(DisplayName = "lgtblue"),
+	lgtviolet  UMETA(DisplayName = "lgtviolet"),
+	medred  UMETA(DisplayName = "medred"),
+	medgreen  UMETA(DisplayName = "medgreen"),
+	medblue  UMETA(DisplayName = "medblue"),
+	medviolet  UMETA(DisplayName = "medviolet"),
+	hvyred  UMETA(DisplayName = "hvyred"),
+	hvygreen  UMETA(DisplayName = "hvygreen"),
+	hvyblue  UMETA(DisplayName = "hvyblue"),
+	hvyviolet  UMETA(DisplayName = "hvyviolet"),
+	megared  UMETA(DisplayName = "megared"),
+	megagreen  UMETA(DisplayName = "megagreen"),
+	megablue  UMETA(DisplayName = "megablue"),
+	megaviolet  UMETA(DisplayName = "megaviolet"),
 	missile  UMETA(DisplayName = "missile"),
+	hvymissile  UMETA(DisplayName = "hvymissile"),
 	torpedo  UMETA(DisplayName = "torpedo"),
-	lightred  UMETA(DisplayName = "lightred"),
-	lightgreen  UMETA(DisplayName = "lightgreen"),
-	lightblue  UMETA(DisplayName = "lightblue"),
-	lightviolet  UMETA(DisplayName = "lightviolet"),
-	heavyred  UMETA(DisplayName = "heavyred"),
-	heavygreen  UMETA(DisplayName = "heavygreen"),
-	heavyblue  UMETA(DisplayName = "heavyblue"),
-	heavyviolet  UMETA(DisplayName = "heavyviolet"),
-	superred  UMETA(DisplayName = "superred"),
-	supergreen  UMETA(DisplayName = "supergreen"),
-	superblue  UMETA(DisplayName = "superblue"),
-	superviolet  UMETA(DisplayName = "superviolet"),
-	cruisemissile  UMETA(DisplayName = "cruisemissile"),
-	longrangestandoffweapon  UMETA(DisplayName = "longrangestandoffweapon"),
-	antishipmissile  UMETA(DisplayName = "antishipmissile"),
-	spacelaunchedballisticmissile  UMETA(DisplayName = "spacelaunchedballisticmissile")
+	hvytorpedo  UMETA(DisplayName = "hvytorpedo"),
+	warhead  UMETA(DisplayName = "warhead"),
+	hvywarhead  UMETA(DisplayName = "hvywarhead"),
+	bomb  UMETA(DisplayName = "bomb")
 };
 
 UENUM(BlueprintType)
@@ -111,7 +112,7 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
 		Laser_Type prmy_weap_type {
-		Laser_Type::red
+		Laser_Type::none
 	};
 
 	UPROPERTY(BlueprintReadWrite, Category = "Enum")
