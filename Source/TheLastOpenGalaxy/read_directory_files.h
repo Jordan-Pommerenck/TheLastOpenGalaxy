@@ -25,6 +25,6 @@ class THELASTOPENGALAXY_API Uread_directory_files : public UBlueprintFunctionLib
 
 public:
     UFUNCTION(BlueprintCallable, Category = FileManager)
-        static TArray<FString> get_directory_files(FString Directory, FString Extension);
+        static void get_directory_files(FString directory, FString extension, TArray<FString>& all_files, bool &return_value);
 	
 };

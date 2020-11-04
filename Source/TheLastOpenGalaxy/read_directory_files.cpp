@@ -3,14 +3,14 @@
 
 #include "read_directory_files.h"
 
-TArray<FString> Uread_directory_files::get_directory_files(FString Directory, FString Extension)
+void Uread_directory_files::get_directory_files(FString directory, FString extension, TArray<FString>& all_files, bool& return_value)
 {
-    TArray<FString> output;
-    output.Empty();
-    if (FPaths::DirectoryExists(Directory))
-    {
-        FString path = Directory + Extension;
-        FFileManagerGeneric::Get().FindFiles(output, *path, true, false);
+    all_files.Empty();
+
+    if (FPaths::DirectoryExists(directory)) {
+        FString path = directory + extension;
+        FFileManagerGeneric::Get().FindFiles(all_files, *path, true, false);
+        all_files.Sort();
     }
-    return output;
+    return_value = bool(all_files.Num() > 0);
 }
