@@ -1,0 +1,15 @@
+{
+		"window_mode": "Fullscreen",
+		"screen_resolution":
+		{
+			"X": 0,
+			"Y": 0
+		},
+		"view_distance": "NEAR",
+		"anti_aliasing": "NEAR",
+		"post_processing": "NEAR",
+		"shadow_quality": "NEAR",
+		"texture_quality": "NEAR",
+		"vfx_quality": "NEAR",
+		"shading_quality": "NEAR"
+	}
