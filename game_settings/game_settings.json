@@ -2,14 +2,15 @@
 		"window_mode": "Fullscreen",
 		"screen_resolution":
 		{
-			"X": 0,
-			"Y": 0
+			"X": 3840,
+			"Y": 2160
 		},
-		"view_distance": "NEAR",
-		"anti_aliasing": "NEAR",
-		"post_processing": "NEAR",
-		"shadow_quality": "NEAR",
-		"texture_quality": "NEAR",
-		"vfx_quality": "NEAR",
-		"shading_quality": "NEAR"
+		"view_distance": "CINEMATIC",
+		"anti_aliasing": "CINEMATIC",
+		"post_processing": "CINEMATIC",
+		"shadow_quality": "CINEMATIC",
+		"texture_quality": "CINEMATIC",
+		"vfx_quality": "CINEMATIC",
+		"shading_quality": "CINEMATIC",
+		"max_frame_rate": 60
 	}
