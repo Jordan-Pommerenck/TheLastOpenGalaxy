@@ -9,7 +9,7 @@
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 				"center_location":
 				{
-					"X": 15000,
+					"X": -50000,
 					"Y": 0,
 					"Z": 1000
 				},
@@ -45,14 +45,14 @@
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 		"human_loc":
 		{
-			"X": -3624,
+			"X": -30624,
 			"Y": 0,
 			"Z": 1000
 		},
 		"human_rot":
 		{
 			"Pitch": 0,
-			"Yaw": 0,
+			"Yaw": 180,
 			"Roll": 0
 		},
 		"human_team": "red",
