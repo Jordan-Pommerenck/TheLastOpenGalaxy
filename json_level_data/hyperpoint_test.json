@@ -9,14 +9,14 @@
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 				"center_location":
 				{
-					"X": -3.8,
+					"X": -2.0,
 					"Y": 0,
 					"Z": 1.0
 				},
 				"center_rotation":
 				{
 					"Pitch": 0,
-					"Yaw": 0,
+					"Yaw": 135,
 					"Roll": 0
 				},
 				"difficulty_level": "HARD",
@@ -26,7 +26,7 @@
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
 				"i_need_disabled": false,
-				"waypoint_looping": true,
+				"waypoint_looping": false,
 				"waypoints": [
 					{
 						"X": 0.5,
@@ -34,8 +34,13 @@
 						"Z": 0
 					},					
 					{
-						"X": 1,
+						"X": 1.5,
 						"Y": 0.1,
+						"Z": 0.2
+					},					
+					{
+						"X": 1.5,
+						"Y": -0.5,
 						"Z": 0.2
 					}
 				],
@@ -52,7 +57,7 @@
 		"human_rot":
 		{
 			"Pitch": 0,
-			"Yaw": 180,
+			"Yaw": 0,
 			"Roll": 0
 		},
 		"human_team": "red",
