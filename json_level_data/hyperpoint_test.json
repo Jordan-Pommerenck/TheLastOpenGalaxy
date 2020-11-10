@@ -9,9 +9,9 @@
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 				"center_location":
 				{
-					"X": -50000,
+					"X": -3.8,
 					"Y": 0,
-					"Z": 1000
+					"Z": 1.0
 				},
 				"center_rotation":
 				{
@@ -21,7 +21,7 @@
 				},
 				"difficulty_level": "HARD",
 				"team": "blue",
-				"formation_shape": "vic",
+				"formation_shape": "line",
 				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
@@ -45,9 +45,9 @@
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 		"human_loc":
 		{
-			"X": -30624,
+			"X": -3.0,
 			"Y": 0,
-			"Z": 1000
+			"Z": 1.0
 		},
 		"human_rot":
 		{

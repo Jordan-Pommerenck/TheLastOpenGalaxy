@@ -11,9 +11,9 @@
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/lindwurm_fighter.lindwurm_fighter_C'",
 				"center_location":
 				{
-					"X": 50000,
-					"Y": 8000,
-					"Z": 8000
+					"X": 3.0,
+					"Y": 0.4,
+					"Z": 1.5
 				},
 				"center_rotation":
 				{
@@ -37,9 +37,9 @@
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 				"center_location":
 				{
-					"X": 15000,
+					"X": 0,
 					"Y": 0,
-					"Z": 1000
+					"Z": 1.0
 				},
 				"center_rotation":
 				{
@@ -62,9 +62,9 @@
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 		"human_loc":
 		{
-			"X": -1624,
+			"X": -1.0,
 			"Y": 0,
-			"Z": 1000
+			"Z": 1.0
 		},
 		"human_rot":
 		{

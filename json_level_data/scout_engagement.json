@@ -11,9 +11,9 @@
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/long_range_scout.long_range_scout_C'",
 				"center_location":
 				{
-					"X": 100000,
-					"Y": 5000,
-					"Z": 0
+					"X": 6.0,
+					"Y": 0,
+					"Z": -0.5
 				},
 				"center_rotation":
 				{
@@ -37,9 +37,9 @@
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/long_range_scout.long_range_scout_C'",
 				"center_location":
 				{
-					"X": 100000,
-					"Y": 5000,
-					"Z": 2500
+					"X": 6.0,
+					"Y": 0,
+					"Z": 0.5
 				},
 				"center_rotation":
 				{
@@ -64,7 +64,7 @@
 				"center_location":
 				{
 					"X": 0,
-					"Y": -1200,
+					"Y": -1.0,
 					"Z": 0
 				},
 				"center_rotation":
@@ -88,7 +88,7 @@
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 		"human_loc":
 		{
-			"X": -1624,
+			"X": -1.0,
 			"Y": 0,
 			"Z": 0
 		},
