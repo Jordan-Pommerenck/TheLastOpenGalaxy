@@ -5,7 +5,7 @@
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
-				"names": "Blue 1",
+				"names": "Blue 1, Blue 2, Blue 3",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/heavy_fighter.heavy_fighter_C'",
 				"center_location":
 				{
@@ -21,7 +21,7 @@
 				},
 				"difficulty_level": "HARD",
 				"team": "blue",
-				"formation_shape": "line",
+				"formation_shape": "vic",
 				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
