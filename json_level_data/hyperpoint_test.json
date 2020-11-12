@@ -1,6 +1,6 @@
 {
 		"display_name": "HyperSpace Test",
-		"level_description": "	   This level tests AI Waypoint ability",
+		"level_description": "	   This level tests AI waypoint ability and hyperspace code.",
 		"level_name": "Test-System-A",
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
