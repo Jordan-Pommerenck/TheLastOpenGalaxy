@@ -54,6 +54,15 @@ protected:
 		NULL
 	};
 
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		UParticleSystem* emitter_explosion {
+		NULL
+	};
+
+	// The volume of the laser sound
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float emitter_scale{ 0 };
+
 	// The volume of the laser sound
 	UPROPERTY(BlueprintReadWrite, Category = "Sound")
 		float laser_volume{ 0 };
