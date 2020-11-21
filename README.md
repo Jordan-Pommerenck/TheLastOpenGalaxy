@@ -1,13 +1,17 @@
 # TheLastOpenGalaxy
 
-The Last Open Galaxy is an Open Source Game developed using Unreal Engine featuring 1st or 3rd person space combat.
-There is a YouTube playlist that documents the progress of the game development:
+*The Last Open Galaxy* is an Open Source space combat game developed using Unreal Engine. There is a YouTube playlist that documents the progress of the game development:
 https://www.youtube.com/playlist?list=PL5ggGpkCksKLLj_aU1JyuXiCCaVBiVY2t
 
-A Discord channel is available for users wishing to stay up-to-date on the development of the game, wishing to get involved on the project, or to develop a mod for the game. https://discord.gg/5vfDkg4
+A Discord channel is available for anyone wishing to stay up-to-date on the development of the game, get involved on the project, or to develop a mod for the game. https://discord.gg/sgJe8NjXqu
 
-The project may have EPIC GAMES Pluggins.  To disable go into TheLastOpenGalaxy.uproject using and set "Enabled" to false in order to open the project.
+The project may have **EPIC GAMES** plug-ins.  To disable open the `TheLastOpenGalaxy.uproject` using the editor of your choice and set "Enabled" to `false` for the given plug-in in order to open the project.
 
 # TheLastOpenGalaxy - Team
 
-`start` the team breakdown of contributions
+This section breaks down *all* contributions to the project made by team members.
+
+### TEAM MEMBER NAME ###
+###### ROLE(S) ######
+- `filename` description
+- `filename` description
