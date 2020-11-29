@@ -1,7 +1,7 @@
 {
 		"display_name": "Waypoint Test I",
 		"level_description": "	   This level tests AI Waypoint ability",
-		"level_name": "Test-System-A",
+		"level_name": "final-inferno",
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{

@@ -1,7 +1,7 @@
 {
 		"display_name": "HyperSpace Test",
 		"level_description": "	   This level tests AI waypoint ability and hyperspace code.",
-		"level_name": "Test-System-A",
+		"level_name": "final-inferno",
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
