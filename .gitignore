@@ -15,7 +15,6 @@ Saved
 *.log
 
 # Ignore the sub folders
-Levels/
 Blender/
 heavy_fighter/
 Textures/
