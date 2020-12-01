@@ -59,9 +59,18 @@ protected:
 		NULL
 	};
 
-	// The volume of the laser sound
+	// The size of the weapon
 	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
 		float emitter_scale{ 0 };
+
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		USoundBase* explosion_sound {
+		NULL
+	};
+
+	// The volume of the weapon explosion
+	UPROPERTY(BlueprintReadWrite, Category = "Base Parameter")
+		float explosion_volume{ 0 };
 
 	// The volume of the laser sound
 	UPROPERTY(BlueprintReadWrite, Category = "Sound")
