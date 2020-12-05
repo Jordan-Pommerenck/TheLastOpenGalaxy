@@ -2,8 +2,8 @@
 		"window_mode": "Fullscreen",
 		"screen_resolution":
 		{
-			"X": 3840,
-			"Y": 2160
+			"X": 1920,
+			"Y": 1080
 		},
 		"view_distance": "CINEMATIC",
 		"anti_aliasing": "CINEMATIC",
