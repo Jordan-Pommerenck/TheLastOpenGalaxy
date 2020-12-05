@@ -71,6 +71,32 @@
 				"waypoint_looping": false,
 				"waypoints": [],
 				"hyper_in_time": 0
+			},
+			{
+				"names": "Blue Cargo",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/cargo.cargo_C'",
+				"center_location":
+				{
+					"X": -4,
+					"Y": 2,
+					"Z": 1
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "MEDIUM",
+				"team": "blue",
+				"formation_shape": "wedge",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 0
 			}
 		],
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/attack_fighter.attack_fighter_C'",
