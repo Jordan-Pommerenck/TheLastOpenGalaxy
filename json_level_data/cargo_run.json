@@ -5,6 +5,32 @@
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
+				"names": "Red Bomber",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+				"center_location":
+				{
+					"X": -8,
+					"Y": 4,
+					"Z": 1
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": -45,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "line",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 0
+			},
+			{
 				"names": "Cargo Transport, 3",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
 				"center_location":
@@ -52,8 +78,8 @@
 				"center_location":
 				{
 					"X": -1.5,
-					"Y": 2,
-					"Z": 2
+					"Y": 1,
+					"Z": 5.5
 				},
 				"center_rotation":
 				{
@@ -63,7 +89,7 @@
 				},
 				"difficulty_level": "HARD",
 				"team": "blue",
-				"formation_shape": "wedge",
+				"formation_shape": "column",
 				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
@@ -92,14 +118,14 @@
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 		"human_loc":
 		{
-			"X": -3.0,
-			"Y": 0,
+			"X": -10.0,
+			"Y": 4,
 			"Z": 1.0
 		},
 		"human_rot":
 		{
 			"Pitch": 0,
-			"Yaw": 0,
+			"Yaw": -45,
 			"Roll": 0
 		},
 		"human_team": "red",
