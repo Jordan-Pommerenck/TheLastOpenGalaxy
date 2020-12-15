@@ -47,7 +47,7 @@
 				"hyper_in_time": 1
 			}
 		],
-		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/attack_fighter.attack_fighter_C'",
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 		"human_loc":
 		{
 			"X": -3.0,
