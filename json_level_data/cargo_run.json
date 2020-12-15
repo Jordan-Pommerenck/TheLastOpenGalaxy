@@ -1,0 +1,71 @@
+{
+		"display_name": "Cargo Run",
+		"level_description": "	   This level tests the escort ability of the AI.",
+		"level_name": "fridged-doom",
+		"game_mode": "Dogfight",
+		"all_spawn_craft": [
+			{
+				"names": "Blue Carrier",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
+				"center_location":
+				{
+					"X": -2.5,
+					"Y": 0,
+					"Z": 1
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 135,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "wedge",
+				"AI_capital_behavior": true,
+				"i_need_to_escort": false,
+				"i_need_escorted": true,
+				"i_need_disabled": false,
+				"waypoint_looping": true,
+				"waypoints": [
+					{
+						"X": 0.5,
+						"Y": 0.1,
+						"Z": 0
+					},					
+					{
+						"X": 1.5,
+						"Y": 0.1,
+						"Z": 0.2
+					},					
+					{
+						"X": 1.5,
+						"Y": -0.5,
+						"Z": 0.2
+					}
+				],
+				"hyper_in_time": 1
+			}
+		],
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/attack_fighter.attack_fighter_C'",
+		"human_loc":
+		{
+			"X": -3.0,
+			"Y": 0,
+			"Z": 1.0
+		},
+		"human_rot":
+		{
+			"Pitch": 0,
+			"Yaw": 0,
+			"Roll": 0
+		},
+		"human_team": "red",
+		"human_frac_speed": 0.0,
+		"dogfight_ally_frac_destroy": 1.0,
+		"dogfight_enemy_frac_destroy": 1.0,
+		"escort_ally_frac_destroy": 1.0,
+		"escort_enemy_frac_destroy": 1.0,
+		"disable_ally_frac_destroy": 1.0,
+		"disable_enemy_frac_destroy": 1.0
+	}
