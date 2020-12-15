@@ -5,18 +5,18 @@
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
-				"names": "Blue Carrier",
+				"names": "Cargo Transport, 3",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
 				"center_location":
 				{
-					"X": -2.5,
-					"Y": 0,
+					"X": -1.5,
+					"Y": 2,
 					"Z": 1
 				},
 				"center_rotation":
 				{
 					"Pitch": 0,
-					"Yaw": 135,
+					"Yaw": 125,
 					"Roll": 0
 				},
 				"difficulty_level": "HARD",
@@ -24,9 +24,51 @@
 				"formation_shape": "wedge",
 				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
-				"i_need_escorted": true,
+				"i_need_escorted": false,
 				"i_need_disabled": false,
-				"waypoint_looping": true,
+				"waypoint_looping": false,
+				"waypoints": [
+					{
+						"X": 0.5,
+						"Y": 0.1,
+						"Z": 0
+					},					
+					{
+						"X": 1.5,
+						"Y": 0.1,
+						"Z": 0.2
+					},					
+					{
+						"X": 1.5,
+						"Y": -0.5,
+						"Z": 0.2
+					}
+				],
+				"hyper_in_time": 1
+			},
+			{
+				"names": "Cargo Runner, 4",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_2.freighter_2_C'",
+				"center_location":
+				{
+					"X": -1.5,
+					"Y": 2,
+					"Z": 2
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 125,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "wedge",
+				"AI_capital_behavior": true,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
 				"waypoints": [
 					{
 						"X": 0.5,
