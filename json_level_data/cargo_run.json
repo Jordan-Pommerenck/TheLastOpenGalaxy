@@ -2,7 +2,7 @@
 		"display_name": "Cargo Run",
 		"level_description": "	   This level tests the escort ability of the AI.",
 		"level_name": "fridged-doom",
-		"game_mode": "Dogfight",
+		"game_mode": "Escort",
 		"all_spawn_craft": [
 			{
 				"names": "Crimson Bomber, 5",
@@ -32,7 +32,7 @@
 			},
 			{
 				"names": "Red Flame Gunboat, 3",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/gunboat.gunboat_C'",
 				"center_location":
 				{
 					"X": -9,
