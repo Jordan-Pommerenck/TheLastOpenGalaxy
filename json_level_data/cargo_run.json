@@ -5,7 +5,7 @@
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
-				"names": "Red Bomber, 3",
+				"names": "Crimson Bomber, 5",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 				"center_location":
 				{
@@ -29,6 +29,84 @@
 				"waypoint_looping": false,
 				"waypoints": [],
 				"hyper_in_time": 0
+			},
+			{
+				"names": "Red Flame Gunboat, 3",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+				"center_location":
+				{
+					"X": -9,
+					"Y": 4,
+					"Z": 1
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": -45,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "line",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 0
+			},
+			{
+				"names": "Cobalt Defender, 4",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
+				"center_location":
+				{
+					"X": -2.0,
+					"Y": 0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 125,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 5
+			},
+			{
+				"names": "Sapphire Defender, 4",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
+				"center_location":
+				{
+					"X": -2.0,
+					"Y": -5.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 125,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 5
 			},
 			{
 				"names": "Cargo Transport, 3",
@@ -55,22 +133,12 @@
 				"waypoint_looping": false,
 				"waypoints": [
 					{
-						"X": 0.5,
-						"Y": 0.1,
-						"Z": 0
-					},					
-					{
-						"X": 1.5,
-						"Y": 0.1,
-						"Z": 0.2
-					},					
-					{
-						"X": 1.5,
-						"Y": -0.5,
-						"Z": 0.2
+						"X": 5.0,
+						"Y": 0.0,
+						"Z": 0.0
 					}
 				],
-				"hyper_in_time": 3
+				"hyper_in_time": 4
 			},
 			{
 				"names": "Cargo Runner, 4",
@@ -97,22 +165,12 @@
 				"waypoint_looping": false,
 				"waypoints": [
 					{
-						"X": 0.5,
-						"Y": 0.1,
-						"Z": 0
-					},					
-					{
-						"X": 1.5,
-						"Y": 0.1,
-						"Z": 0.2
-					},					
-					{
-						"X": 1.5,
-						"Y": -0.5,
-						"Z": 0.2
+						"X": 5.0,
+						"Y": 0.0,
+						"Z": 0.0
 					}
 				],
-				"hyper_in_time": 3
+				"hyper_in_time": 5
 			}
 		],
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/gunboat.gunboat_C'",
