@@ -5,7 +5,7 @@
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
-				"names": "Red Bomber",
+				"names": "Red Bomber, 3",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 				"center_location":
 				{
@@ -70,7 +70,7 @@
 						"Z": 0.2
 					}
 				],
-				"hyper_in_time": 1
+				"hyper_in_time": 3
 			},
 			{
 				"names": "Cargo Runner, 4",
@@ -112,10 +112,10 @@
 						"Z": 0.2
 					}
 				],
-				"hyper_in_time": 1
+				"hyper_in_time": 3
 			}
 		],
-		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
 		"human_loc":
 		{
 			"X": -10.0,
