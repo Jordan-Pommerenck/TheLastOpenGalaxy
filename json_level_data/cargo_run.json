@@ -115,7 +115,7 @@
 				"hyper_in_time": 3
 			}
 		],
-		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/gunboat.gunboat_C'",
 		"human_loc":
 		{
 			"X": -10.0,
