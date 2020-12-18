@@ -1,5 +1,5 @@
 {
-		"display_name": "Cargo Run",
+		"display_name": "Fridged Ambush",
 		"level_description": "	   This level tests the escort ability of the AI.",
 		"level_name": "fridged-doom",
 		"game_mode": "Escort",
@@ -128,13 +128,13 @@
 				"formation_shape": "wedge",
 				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
-				"i_need_escorted": false,
+				"i_need_escorted": true,
 				"i_need_disabled": false,
 				"waypoint_looping": false,
 				"waypoints": [
 					{
-						"X": 5.0,
-						"Y": 0.0,
+						"X": -5.0,
+						"Y": 8.0,
 						"Z": 0.0
 					}
 				],
@@ -160,13 +160,13 @@
 				"formation_shape": "column",
 				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
-				"i_need_escorted": false,
+				"i_need_escorted": true,
 				"i_need_disabled": false,
 				"waypoint_looping": false,
 				"waypoints": [
 					{
-						"X": 5.0,
-						"Y": 0.0,
+						"X": -5.0,
+						"Y": 8.0,
 						"Z": 0.0
 					}
 				],
