@@ -173,7 +173,7 @@
 				"hyper_in_time": 5
 			}
 		],
-		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/gunboat.gunboat_C'",
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 		"human_loc":
 		{
 			"X": -10.0,
@@ -191,7 +191,7 @@
 		"dogfight_ally_frac_destroy": 1.0,
 		"dogfight_enemy_frac_destroy": 1.0,
 		"escort_ally_frac_destroy": 1.0,
-		"escort_enemy_frac_destroy": 0,
+		"escort_enemy_frac_destroy": 1.0,
 		"disable_ally_frac_destroy": 1.0,
 		"disable_enemy_frac_destroy": 1.0
 	}
