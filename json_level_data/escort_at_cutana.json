@@ -112,7 +112,7 @@
 			},
 			{
 				"names": "Imperium Guardian",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/guardian.guardian_C'",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
 				"center_location":
 				{
 					"X": 12.0,
