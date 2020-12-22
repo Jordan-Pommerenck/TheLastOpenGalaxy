@@ -1,72 +1,30 @@
 {
 		"display_name": "Escort At Cutana System",
-		"level_description": "	The Blue Imperium has learned of one of our freighter shipping lanes. You will be tasked with preventing our freighter loaded with valuable medical equipment from being disabled and falling into the hands of our enemies. You will lead a squadron of falcon fighters to guard the precious cargo.
+		"level_description": "	The BLUE IMPERIUM has learned of one of our freighter shipping lanes. You will be tasked with preventing our freighter loaded with valuable medical equipment from being disabled and falling into the hands of our enemies. You will lead a squadron of attack fighters to guard the precious cargo.
 
 		Be on the lookout for enemy ships hypering in at any time. Stay close to your freighter and allocate to engines to intercept.",
 		"level_name": "final-inferno",
 		"game_mode": "Disable",
 		"all_spawn_craft": [
 			{
-				"names": "Blue Carrier",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/heavy_carrier.heavy_carrier_C'",
+				"names": "Imperium Bomber",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 				"center_location":
 				{
-					"X": -2.5,
-					"Y": 0,
-					"Z": 1
+					"X": -2.0,
+					"Y": 0.0,
+					"Z": 2.0
 				},
 				"center_rotation":
 				{
 					"Pitch": 0,
-					"Yaw": 135,
+					"Yaw": 180,
 					"Roll": 0
 				},
-				"difficulty_level": "HARD",
+				"difficulty_level": "NIGHTMARE",
 				"team": "blue",
-				"formation_shape": "wedge",
-				"AI_capital_behavior": true,
-				"i_need_to_escort": false,
-				"i_need_escorted": true,
-				"i_need_disabled": false,
-				"waypoint_looping": true,
-				"waypoints": [
-					{
-						"X": 0.5,
-						"Y": 0.1,
-						"Z": 0
-					},					
-					{
-						"X": 1.5,
-						"Y": 0.1,
-						"Z": 0.2
-					},					
-					{
-						"X": 1.5,
-						"Y": -0.5,
-						"Z": 0.2
-					}
-				],
-				"hyper_in_time": 1
-			},
-			{
-				"names": "Red Destroyer",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/light_destroyer.light_destroyer_C'",
-				"center_location":
-				{
-					"X": -2.5,
-					"Y": 2,
-					"Z": 1
-				},
-				"center_rotation":
-				{
-					"Pitch": 0,
-					"Yaw": -90,
-					"Roll": 0
-				},
-				"difficulty_level": "MEDIUM",
-				"team": "red",
-				"formation_shape": "wedge",
-				"AI_capital_behavior": true,
+				"formation_shape": "line",
+				"AI_capital_behavior": false,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
 				"i_need_disabled": false,
@@ -75,13 +33,39 @@
 				"hyper_in_time": 0
 			},
 			{
-				"names": "Blue Cargo",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/cargo.cargo_C'",
+				"names": "Sapphire Bomber, 3",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 				"center_location":
 				{
-					"X": -4,
-					"Y": 2,
-					"Z": 1
+					"X": -2.0,
+					"Y": -5.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 90,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 15
+			},
+			{
+				"names": "Maruntu Carakku",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
+				"center_location":
+				{
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.0
 				},
 				"center_rotation":
 				{
@@ -89,15 +73,21 @@
 					"Yaw": 0,
 					"Roll": 0
 				},
-				"difficulty_level": "MEDIUM",
-				"team": "blue",
-				"formation_shape": "wedge",
-				"AI_capital_behavior": false,
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "line",
+				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
-				"i_need_disabled": false,
+				"i_need_disabled": true,
 				"waypoint_looping": false,
-				"waypoints": [],
+				"waypoints": [
+					{
+						"X": 100.0,
+						"Y": 0.0,
+						"Z": 0.0
+					}
+				],
 				"hyper_in_time": 0
 			}
 		],
@@ -115,7 +105,7 @@
 			"Roll": 0
 		},
 		"human_team": "red",
-		"human_frac_speed": 1.0,
+		"human_frac_speed": 0.25,
 		"dogfight_ally_frac_destroy": 1.0,
 		"dogfight_enemy_frac_destroy": 1.0,
 		"escort_ally_frac_destroy": 1.0,
