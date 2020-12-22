@@ -1,8 +1,10 @@
 {
-		"display_name": "Escort Test",
-		"level_description": "	   This level tests the escort ability of the AI.",
+		"display_name": "Escort At Cutana System",
+		"level_description": "	The Blue Imperium has learned of one of our freighter shipping lanes. You will be tasked with preventing our freighter loaded with valuable medical equipment from being disabled and falling into the hands of our enemies. You will lead a squadron of falcon fighters to guard the precious cargo.
+
+		Be on the lookout for enemy ships hypering in at any time. Stay close to your freighter and allocate to engines to intercept.",
 		"level_name": "final-inferno",
-		"game_mode": "Dogfight",
+		"game_mode": "Disable",
 		"all_spawn_craft": [
 			{
 				"names": "Blue Carrier",
@@ -113,7 +115,7 @@
 			"Roll": 0
 		},
 		"human_team": "red",
-		"human_frac_speed": 0.0,
+		"human_frac_speed": 1.0,
 		"dogfight_ally_frac_destroy": 1.0,
 		"dogfight_enemy_frac_destroy": 1.0,
 		"escort_ally_frac_destroy": 1.0,
