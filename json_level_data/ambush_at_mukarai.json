@@ -1,6 +1,8 @@
 {
-		"display_name": "Fridged Ambush",
-		"level_description": "	   This level tests the escort ability of the AI.",
+		"display_name": "Ambush at Mukarai",
+		"level_description": "	We have received logistical information about BLUE fleet shipping and supply lines. Seven freighters carrying weapons will have to enter the Mukarai system before exiting to a different hyperlane. We have allocated 6 bombers and 3 gunboat escorts to attack this fleet. You should expect heavy resistance from fighter escorts. You will have less than 5 minutes to destroy all enemy freighters in order for this ambush to be considered a success.
+		
+		Focus on the enemy fighters first to give your bomber wingmen time to make dedicated attack runs. Once they are destroyed, you can turn your attention on any remaining freighters.",
 		"level_name": "fridged-doom",
 		"game_mode": "Escort",
 		"all_spawn_craft": [
@@ -187,7 +189,7 @@
 			"Roll": 0
 		},
 		"human_team": "red",
-		"human_frac_speed": 0.0,
+		"human_frac_speed": 1.0,
 		"dogfight_ally_frac_destroy": 1.0,
 		"dogfight_enemy_frac_destroy": 1.0,
 		"escort_ally_frac_destroy": 1.0,
