@@ -127,7 +127,7 @@
 				},
 				"difficulty_level": "HARD",
 				"team": "blue",
-				"formation_shape": "column",
+				"formation_shape": "line",
 				"AI_capital_behavior": false,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
