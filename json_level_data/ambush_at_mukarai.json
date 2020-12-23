@@ -1,6 +1,6 @@
 {
 		"display_name": "Ambush at Mukarai",
-		"level_description": "	We have received logistical information about BLUE IMPERIUM shipping and supply lines. Seven freighters carrying weapons will have to enter the Mukarai system before exiting to a different hyperlane. We have allocated 6 bombers and 3 gunboat escorts to attack this fleet. You should expect heavy resistance from fighter escorts. You will have less than 5 minutes to destroy all enemy freighters in order for this ambush to be considered a success.
+		"level_description": "	We have received logistical information about BLUE IMPERIUM shipping and supply lines. Seven freighters carrying weapons will have to enter the Mukarai system before exiting to a different hyperlane. We have allocated 6 bombers and 6 gunboat escorts to attack this fleet. You should expect heavy resistance from fighter escorts. You will have less than 5 minutes to destroy all enemy freighters in order for this ambush to be considered a success.
 		
 		Focus on the enemy fighters first to give your bomber wingmen time to make dedicated attack runs. Once they are destroyed, you can turn your attention on any remaining freighters.",
 		"level_name": "fridged-doom",
@@ -33,7 +33,7 @@
 				"hyper_in_time": 0
 			},
 			{
-				"names": "Red Flame Gunboat, 3",
+				"names": "Red Flame Gunboat, 6",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/gunboat.gunboat_C'",
 				"center_location":
 				{
