@@ -137,7 +137,7 @@
 				"hyper_in_time": 110
 			},
 			{
-				"names": "Maruntu Carakku",
+				"names": "Maruntu Carakku, 100",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
 				"center_location":
 				{
@@ -159,13 +159,7 @@
 				"i_need_escorted": false,
 				"i_need_disabled": true,
 				"waypoint_looping": false,
-				"waypoints": [
-					{
-						"X": 100.0,
-						"Y": 0.0,
-						"Z": 0.0
-					}
-				],
+				"waypoints": [],
 				"hyper_in_time": 0
 			}
 		],
