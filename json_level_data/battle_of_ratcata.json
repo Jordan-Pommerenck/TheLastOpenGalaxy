@@ -1,0 +1,193 @@
+{
+		"display_name": "Battle OF Ratcata",
+		"level_description": "	The BLUE IMPERIUM has discovered the location of our sixth fleet. Our only hope is to destroy at least 75% of enemy craft in an effort to force their retreat. The RED REPUBLIC would be unable to recover should we lose more than 75% of our fleet.
+
+		This mission is a massive dogfight and your primary goal is to stay alive. Stay close to your capital ships and focus your attention on the more nimble enemy ships first.",
+		"level_name": "volatile-giant",
+		"game_mode": "Dogfight",
+		"all_spawn_craft": [
+			{
+				"names": "Imperium Bomber",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+				"center_location":
+				{
+					"X": 5.0,
+					"Y": 0.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 180,
+					"Roll": 0
+				},
+				"difficulty_level": "NIGHTMARE",
+				"team": "blue",
+				"formation_shape": "line",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 0
+			},
+			{
+				"names": "Imperium Bomber, 3",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+				"center_location":
+				{
+					"X": -2.0,
+					"Y": -5.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 90,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 15
+			},
+			{
+				"names": "Imperium Bomber, 3",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+				"center_location":
+				{
+					"X": 5.0,
+					"Y": 8.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": -90,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 65
+			},
+			{
+				"names": "Imperium Bomber, 3",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
+				"center_location":
+				{
+					"X": 12.0,
+					"Y": 0.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 120
+			},
+			{
+				"names": "Imperium Guardian",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
+				"center_location":
+				{
+					"X": 12.0,
+					"Y": 2.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "line",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 110
+			},
+			{
+				"names": "Maruntu Carakku",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
+				"center_location":
+				{
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "line",
+				"AI_capital_behavior": true,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": true,
+				"waypoint_looping": false,
+				"waypoints": [
+					{
+						"X": 100.0,
+						"Y": 0.0,
+						"Z": 0.0
+					}
+				],
+				"hyper_in_time": 0
+			}
+		],
+		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/attack_fighter.attack_fighter_C'",
+		"human_loc":
+		{
+			"X": -3.0,
+			"Y": 0,
+			"Z": 1.0
+		},
+		"human_rot":
+		{
+			"Pitch": 0,
+			"Yaw": 0,
+			"Roll": 0
+		},
+		"human_team": "red",
+		"human_frac_speed": 0.25,
+		"dogfight_ally_frac_destroy": 1.0,
+		"dogfight_enemy_frac_destroy": 1.0,
+		"escort_ally_frac_destroy": 1.0,
+		"escort_enemy_frac_destroy": 1.0,
+		"disable_ally_frac_destroy": 1.0,
+		"disable_enemy_frac_destroy": 1.0
+	}
