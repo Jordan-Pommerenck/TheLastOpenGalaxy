@@ -7,7 +7,7 @@
 		"game_mode": "Dogfight",
 		"all_spawn_craft": [
 			{
-				"names": "Imperium Bomber",
+				"names": "Imperium Bomber,20",
 				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
 				"center_location":
 				{
@@ -23,8 +23,138 @@
 				},
 				"difficulty_level": "NIGHTMARE",
 				"team": "blue",
-				"formation_shape": "line",
+				"formation_shape": "vic",
 				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 2.6
+			},
+			{
+				"names": "Imperium Defender,24",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
+				"center_location":
+				{
+					"X": 3.0,
+					"Y": 4.0,
+					"Z": 0.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 180,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "wedge",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 3.2
+			},
+			{
+				"names": "Imperium Elite Defender,24",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
+				"center_location":
+				{
+					"X": 1.0,
+					"Y": -1.0,
+					"Z": 0.5
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 180,
+					"Roll": 0
+				},
+				"difficulty_level": "NIGHTMARE",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 3.8
+			},
+			{
+				"names": "Nila Vinveli Keriyar, 4",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/heavy_carrier.heavy_carrier_C'",
+				"center_location":
+				{
+					"X": 0.0,
+					"Y": -3.0,
+					"Z": 1.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 180,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "wedge",
+				"AI_capital_behavior": true,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 3
+			},
+			{
+				"names": "Nila Vinveli Carakku, 6",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
+				"center_location":
+				{
+					"X": 2.0,
+					"Y": -3.0,
+					"Z": 3.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 180,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "blue",
+				"formation_shape": "column",
+				"AI_capital_behavior": true,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 3
+			},
+			{
+				"names": "Civappu Carakku, 4",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
+				"center_location":
+				{
+					"X": 0.0,
+					"Y": -3.0,
+					"Z": 3.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "column",
+				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
 				"i_need_disabled": false,
@@ -33,116 +163,38 @@
 				"hyper_in_time": 0
 			},
 			{
-				"names": "Imperium Bomber, 3",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
-				"center_location":
-				{
-					"X": -2.0,
-					"Y": -5.0,
-					"Z": 1.0
-				},
-				"center_rotation":
-				{
-					"Pitch": 0,
-					"Yaw": 90,
-					"Roll": 0
-				},
-				"difficulty_level": "HARD",
-				"team": "blue",
-				"formation_shape": "column",
-				"AI_capital_behavior": false,
-				"i_need_to_escort": false,
-				"i_need_escorted": false,
-				"i_need_disabled": false,
-				"waypoint_looping": false,
-				"waypoints": [],
-				"hyper_in_time": 15
-			},
-			{
-				"names": "Imperium Bomber, 3",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
-				"center_location":
-				{
-					"X": 5.0,
-					"Y": 8.0,
-					"Z": 1.0
-				},
-				"center_rotation":
-				{
-					"Pitch": 0,
-					"Yaw": -90,
-					"Roll": 0
-				},
-				"difficulty_level": "HARD",
-				"team": "blue",
-				"formation_shape": "column",
-				"AI_capital_behavior": false,
-				"i_need_to_escort": false,
-				"i_need_escorted": false,
-				"i_need_disabled": false,
-				"waypoint_looping": false,
-				"waypoints": [],
-				"hyper_in_time": 65
-			},
-			{
-				"names": "Imperium Bomber, 3",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/bomber.bomber_C'",
-				"center_location":
-				{
-					"X": 12.0,
-					"Y": 0.0,
-					"Z": 1.0
-				},
-				"center_rotation":
-				{
-					"Pitch": 0,
-					"Yaw": 0,
-					"Roll": 0
-				},
-				"difficulty_level": "HARD",
-				"team": "blue",
-				"formation_shape": "column",
-				"AI_capital_behavior": false,
-				"i_need_to_escort": false,
-				"i_need_escorted": false,
-				"i_need_disabled": false,
-				"waypoint_looping": false,
-				"waypoints": [],
-				"hyper_in_time": 120
-			},
-			{
-				"names": "Imperium Guardian",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/defender.defender_C'",
-				"center_location":
-				{
-					"X": 12.0,
-					"Y": 2.0,
-					"Z": 1.0
-				},
-				"center_rotation":
-				{
-					"Pitch": 0,
-					"Yaw": 0,
-					"Roll": 0
-				},
-				"difficulty_level": "HARD",
-				"team": "blue",
-				"formation_shape": "line",
-				"AI_capital_behavior": false,
-				"i_need_to_escort": false,
-				"i_need_escorted": false,
-				"i_need_disabled": false,
-				"waypoint_looping": false,
-				"waypoints": [],
-				"hyper_in_time": 110
-			},
-			{
-				"names": "Maruntu Carakku, 100",
-				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_1.freighter_1_C'",
+				"names": "Civappu Pokkuvarattu, 4",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_2.freighter_2_C'",
 				"center_location":
 				{
 					"X": 0.0,
-					"Y": 0.0,
+					"Y": -6.0,
+					"Z": 4.0
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "line",
+				"AI_capital_behavior": true,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 0
+			},
+			{
+				"names": "Civappu Vinkalam, 6",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/freighter_2.freighter_2_C'",
+				"center_location":
+				{
+					"X": 0.0,
+					"Y": -12.0,
 					"Z": 0.0
 				},
 				"center_rotation":
@@ -157,7 +209,59 @@
 				"AI_capital_behavior": true,
 				"i_need_to_escort": false,
 				"i_need_escorted": false,
-				"i_need_disabled": true,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 0
+			},
+			{
+				"names": "Red Squadron,24",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/assault_fighter.assault_fighter_C'",
+				"center_location":
+				{
+					"X": -0.5,
+					"Y": 0.0,
+					"Z": -0.25
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "HARD",
+				"team": "red",
+				"formation_shape": "wedge",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
+				"waypoint_looping": false,
+				"waypoints": [],
+				"hyper_in_time": 0
+			},
+			{
+				"names": "Red Gunboat,24",
+				"ship_type": "BlueprintGeneratedClass'/Game/Blueprints/craft/gunboat.gunboat_C'",
+				"center_location":
+				{
+					"X": 0.5,
+					"Y": 0.0,
+					"Z": 0.2
+				},
+				"center_rotation":
+				{
+					"Pitch": 0,
+					"Yaw": 0,
+					"Roll": 0
+				},
+				"difficulty_level": "NIGHTMARE",
+				"team": "red",
+				"formation_shape": "wedge",
+				"AI_capital_behavior": false,
+				"i_need_to_escort": false,
+				"i_need_escorted": false,
+				"i_need_disabled": false,
 				"waypoint_looping": false,
 				"waypoints": [],
 				"hyper_in_time": 0
@@ -166,9 +270,9 @@
 		"human_class": "BlueprintGeneratedClass'/Game/Blueprints/craft/attack_fighter.attack_fighter_C'",
 		"human_loc":
 		{
-			"X": -3.0,
+			"X": -5.0,
 			"Y": 0,
-			"Z": 1.0
+			"Z": 0
 		},
 		"human_rot":
 		{
@@ -178,8 +282,8 @@
 		},
 		"human_team": "red",
 		"human_frac_speed": 0.25,
-		"dogfight_ally_frac_destroy": 1.0,
-		"dogfight_enemy_frac_destroy": 1.0,
+		"dogfight_ally_frac_destroy": 0.75,
+		"dogfight_enemy_frac_destroy": 0.75,
 		"escort_ally_frac_destroy": 1.0,
 		"escort_enemy_frac_destroy": 1.0,
 		"disable_ally_frac_destroy": 1.0,
